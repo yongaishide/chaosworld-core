@@ -1,8 +1,8 @@
-# Chaos World（乱界）· UFO Future
+# 乱界核心（Chaos World Core）
 
 **Minecraft 1.21.1 · NeoForge · 以 AE2 为核心的终局扩展模组**
 
-Chaos World 是 ChaosWorld 整合包的核心模组，为 AE2 的终局玩法提供热力学机械、恒星物质、巨型存储与多方块自动化。从第一台 Dimensional Matter Assembler，到最终极的 Stellar Nexus 恒星模拟平台，构建属于你的星际工业线。
+乱界核心（Chaos World Core）是 ChaosWorld 整合包的核心模组，整合了 UFO Future 模组的全部内容，为 AE2 的终局玩法提供热力学机械、恒星物质、巨型存储与多方块自动化。从第一台 Dimensional Matter Assembler，到最终极的 Stellar Nexus 恒星模拟平台，构建属于你的星际工业线。
 
 ---
 
@@ -91,11 +91,11 @@ Nuclear Star → Neutronium Sphere → Enriched Neutronium Sphere → Charged En
 
 ---
 
-# Chaos World · UFO Future
+# Chaos World Core
 
 **Minecraft 1.21.1 · NeoForge · An AE2 endgame expansion**
 
-Chaos World is the core mod of the ChaosWorld modpack. It extends the AE2 endgame with thermal machines, stellar matter, mega storage and multiblock automation — from your first Dimensional Matter Assembler all the way to the ultimate Stellar Nexus simulation platform.
+Chaos World Core (乱界核心) is the core mod of the ChaosWorld modpack, incorporating all content from the UFO Future mod. It extends the AE2 endgame with thermal machines, stellar matter, mega storage and multiblock automation — from your first Dimensional Matter Assembler all the way to the ultimate Stellar Nexus simulation platform.
 
 ## Features
 
