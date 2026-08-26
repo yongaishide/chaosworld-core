@@ -84,11 +84,11 @@ Nuclear Star → Neutronium Sphere → Enriched Neutronium Sphere → Charged En
 - 使用其快速自动合成规划器，优化大规模合成任务
 
 **NeoEcoAE**〔必须依赖〕
-- ECO 驱动器（ECO Drive）存储子系统联动与能耗显示
-- Quantum Omni 存储矩阵系列使用 ECO 存储子系统格式，详见下方与 AE2 OmniCells 的共同联动
+- ECO 驱动器（ECO Drive）存储子系统联动：Quantum Omni 存储矩阵可装入 ECO 驱动器，附能耗显示
+- 与 AE2 OmniCells 同时安装后，解锁完整的 **ECO - LE9 存储矩阵**等级体系：NeoEcoAE 自带基础等级（如 256m = 4 GiB），本模组在其基础上扩展出 16G~256T~256P 的更高等级系列
 
 **AE2 OmniCells**〔必须依赖〕
-- Quantum Omni 存储矩阵（ECO - LE9）系列：与 **NeoEcoAE + AE2 OmniCells 共同联动**——使用 NeoEcoAE 的 ECO 存储子系统（ECO Drive 容器格式）搭配 AE2 OmniCells 的全能存储后端（全键类型、无限类型数），容量 1M~274G MiB
+- Quantum Omni 存储矩阵基于其**全能存储后端**：支持全部键类型（物品/流体/能量等）、无限类型数，容量 16G~256P（16384 MiB ~ 256 PiB，共 13 个等级）
 
 **AppFlux**〔可选〕
 - 从 AppFlux 无线能量网络提取 FE 能量，为 AE 储能物品（如能量单元）与能量仓口充电
@@ -227,11 +227,11 @@ Nuclear Star → Neutronium Sphere → Enriched Neutronium Sphere → Charged En
 - Uses its fast autocrafting planner for large-scale crafting tasks
 
 **NeoEcoAE** 〔required〕
-- ECO Drive storage subsystem integration with consumption display
-- The Quantum Omni storage matrix series uses the ECO storage subsystem format (see the joint integration with AE2 OmniCells below)
+- ECO Drive storage subsystem integration: Quantum Omni storage matrices fit in ECO drives, with consumption display
+- Together with AE2 OmniCells, unlocks the full **ECO - LE9 storage matrix** tier ladder: NeoEcoAE provides the base tiers (e.g. 256m = 4 GiB), this mod extends them with the 16G–256T–256P series
 
 **AE2 OmniCells** 〔required〕
-- Quantum Omni storage matrix (ECO - LE9) series: a **joint integration of NeoEcoAE + AE2 OmniCells** — NeoEcoAE's ECO storage subsystem (ECO Drive cell format) paired with AE2 OmniCells' universal storage backend (all key types, unlimited types), 1M–274G MiB capacity
+- Quantum Omni storage matrices are built on its **universal storage backend**: every key type (items/fluids/energy...), unlimited types, 16G–256P capacity (16,384 MiB to 256 PiB, 13 tiers)
 
 **AppFlux** 〔optional〕
 - Draws FE power from the AppFlux wireless energy network to recharge AE power items (e.g. energy cells) and hatches
