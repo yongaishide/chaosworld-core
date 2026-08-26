@@ -84,11 +84,11 @@ Nuclear Star → Neutronium Sphere → Enriched Neutronium Sphere → Charged En
 - 使用其快速自动合成规划器，优化大规模合成任务
 
 **NeoEcoAE**〔必须依赖〕
-- ECO - LE9 存储矩阵（量子全能单元）系列：1M~274G MiB 的巨型全能存储
-- ECO 驱动器 / 存储系统联动与能耗显示
+- ECO 驱动器（ECO Drive）存储子系统联动与能耗显示
+- Quantum Omni 存储矩阵系列使用 ECO 存储子系统格式，详见下方与 AE2 OmniCells 的共同联动
 
 **AE2 OmniCells**〔必须依赖〕
-- 支持全能存储单元格式，提供超大容量通用存储
+- Quantum Omni 存储矩阵（ECO - LE9）系列：与 **NeoEcoAE + AE2 OmniCells 共同联动**——使用 NeoEcoAE 的 ECO 存储子系统（ECO Drive 容器格式）搭配 AE2 OmniCells 的全能存储后端（全键类型、无限类型数），容量 1M~274G MiB
 
 **AppFlux**〔可选〕
 - 从 AppFlux 无线能量网络提取 FE 能量，为 AE 储能物品（如能量单元）与能量仓口充电
@@ -227,11 +227,11 @@ Nuclear Star → Neutronium Sphere → Enriched Neutronium Sphere → Charged En
 - Uses its fast autocrafting planner for large-scale crafting tasks
 
 **NeoEcoAE** 〔required〕
-- ECO - LE9 storage matrix (Quantum Omni) series: 1M–274G MiB omni storage
-- ECO drive / storage system integration with consumption display
+- ECO Drive storage subsystem integration with consumption display
+- The Quantum Omni storage matrix series uses the ECO storage subsystem format (see the joint integration with AE2 OmniCells below)
 
 **AE2 OmniCells** 〔required〕
-- Omni cell format support for extra-large universal storage
+- Quantum Omni storage matrix (ECO - LE9) series: a **joint integration of NeoEcoAE + AE2 OmniCells** — NeoEcoAE's ECO storage subsystem (ECO Drive cell format) paired with AE2 OmniCells' universal storage backend (all key types, unlimited types), 1M–274G MiB capacity
 
 **AppFlux** 〔optional〕
 - Draws FE power from the AppFlux wireless energy network to recharge AE power items (e.g. energy cells) and hatches
