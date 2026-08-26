@@ -46,7 +46,15 @@ displayName="${mod_name}" #mandatory
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Chaos World mod - adding various materials, components, and machines.
+Chaos World (UFO Future) - an AE2 endgame expansion for Minecraft 1.21.1 NeoForge.
+
+Quantum multiblocks: Dimensional Matter Assembler, Quantum Matter Fabricator, Quantum Slicer, Quantum Processing Factory, Quantum Cryoforge and a 72-pattern Quantum Pattern Hatch, with MK1-3 tier progression.
+
+Stellar Nexus: simulate stellar physics (Red Giant Collapse, Supernova Harvest, Stellar Synthesis...) for extreme-scale production, with field generators, fuel/coolant/heat management, Safe Mode and Overclocking.
+
+Mega storage: White Dwarf / Pulsar / Neutron Star cells up to 256T, star matter progression, catalysts, UFO tools & armor, Astral Nexus set, Reality Ripper, stellar fluids, ACC/SCM containment and the Structure Terminal.
+
+Integrates with ExtendedAE+, Thunderbolt, AE2LT, NeoEcoAE, AE2 OmniCells, Mekanism, KubeJS, JEI and Jade.
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
