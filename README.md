@@ -63,11 +63,63 @@ Nuclear Star → Neutronium Sphere → Enriched Neutronium Sphere → Charged En
 - **Structure Terminal**：扫描 / 自动建造 / 拆解多方块结构，支持 AE 材料取用、幻影全息预览
 - 内置 AE2 Guide 图文教程（游戏中按 Guide 键打开）
 
-### 兼容性
+### 与其他模组的联动
 
-- **AE2 生态**：ExtendedAE+、AE2 Lightning Tech（AE2LT 闪电科技）与 Thunderbolt Core（其底层库）、NeoEcoAE、AE2 OmniCells、AppFlux
-- **Mekanism**：化学物质存储与自动化联动
-- **KubeJS**：自定义配方；**JEI**：完整配方分类与 3D 多方块预览；**Jade**：多方块状态显示
+**Applied Energistics 2（AE2）**〔必须依赖〕
+- 所有量子多方块直接接入 ME 网络：样板、自动供料、产物直接输出
+- Quantum Pattern Hatch / Quantum Pattern Provider：72 组样板的 AE2 样板仓
+- 巨型存储单元（白矮星 / 脉冲星 / 中子星）为 AE2 存储单元格式，可插入 ME 驱动器，配套 40M~Infinity 存储组件
+- Structure Terminal：从 ME 网络取材料自动建造、绑定无线接入点（WAP）远距离取料
+- Stellar Nexus 从 ME 网络抽取能量与燃料
+- 恒星模拟可批量合成 AE2 奇点
+
+**ExtendedAE+（扩展AE）**〔必须依赖〕
+- 优化其 IO 端口（ExIOPort）批量处理与大容量存取
+- 恒星模拟可批量合成 Entro 水晶
+
+**AE2 Lightning Tech（AE2LT 闪电科技）**〔必须依赖〕
+- 深度联动其 IO 端口、存储服务与 Tick 速率系统，支持大容量高速流转
+
+**Thunderbolt Core（AE2LT 底层库）**〔必须依赖〕
+- 使用其快速自动合成规划器，优化大规模合成任务
+
+**NeoEcoAE**〔必须依赖〕
+- ECO - LE9 存储矩阵（量子全能单元）系列：1M~274G MiB 的巨型全能存储
+- ECO 驱动器 / 存储系统联动与能耗显示
+
+**AE2 OmniCells**〔必须依赖〕
+- 支持全能存储单元格式，提供超大容量通用存储
+
+**AppFlux**〔可选〕
+- 从 AppFlux 无线能量网络提取 FE 能量，为 AE 储能物品（如能量单元）与能量仓口充电
+
+**Mekanism**〔可选〕
+- 量子机械仓口可直接存取化学物质（化学品处理）
+- 化学物质可进入 ME 网络存取（Mekanism 化学物质键）
+- 恒星模拟配方：冶金激增、乙烯富集、裂变堆工艺（以乙烯为燃料）
+- Astral Nexus 套装免疫 Mekanism 辐射
+
+**Advanced AE**〔可选〕
+- 恒星模拟可合成高级量子产物（advancedae_quantum）
+
+**KubeJS**〔可选〕
+- 通过 KubeJS 注册与编辑恒星模拟等自定义配方
+
+**JEI**〔可选〕
+- 全部配方分类：DMA、量子多方块、恒星模拟、凋灵召唤
+- 点击控制器可查看 3D 多方块结构预览
+
+**Jade（WAILA）**〔必须依赖〕
+- 多方块结构状态与 Quantum Pattern Hatch 缓存信息显示
+
+**ProjectE / Project Expansion**〔可选〕
+- 炼金术转换接口与 ME 存储互通：可经由转换接口存取 ME 网络物品
+
+**GuideME**〔可选〕
+- 游戏内图文教程（按 Guide 键打开）
+
+**GeckoLib**〔可选〕
+- UFO 套装与实体动画渲染
 
 ---
 
@@ -154,11 +206,63 @@ Nuclear Star → Neutronium Sphere → Enriched Neutronium Sphere → Charged En
 - **Structure Terminal**: scan, auto-build and dismantle multiblocks, pull materials from AE, ghost hologram preview
 - Built-in AE2 Guide tutorials (open with the Guide key in-game)
 
-### Compatibility
+### Mod Integrations
 
-- **AE2 ecosystem**: ExtendedAE+, AE2 Lightning Tech (AE2LT) with its Thunderbolt Core infrastructure, NeoEcoAE, AE2 OmniCells, AppFlux
-- **Mekanism**: chemical storage and automation integration
-- **KubeJS**: custom recipes; **JEI**: full recipe categories with 3D multiblock preview; **Jade**: multiblock status display
+**Applied Energistics 2 (AE2)** 〔required〕
+- All quantum multiblocks hook directly into the ME network: patterns, automatic feeding, direct output
+- Quantum Pattern Hatch / Quantum Pattern Provider: a 72-pattern AE2 pattern provider
+- Mega cells (White Dwarf / Pulsar / Neutron Star) are AE2 cell formats for ME drives, with 40M–Infinity storage components
+- Structure Terminal: auto-builds from ME materials and can pull from any distance via a bound wireless access point
+- Stellar Nexus draws energy and fuel from the ME network
+- Stellar simulations can mass-produce AE2 Singularities
+
+**ExtendedAE+** 〔required〕
+- Optimizes its IO port (ExIOPort) batch processing and bulk access
+- Stellar simulations can mass-produce Entro Crystals
+
+**AE2 Lightning Tech (AE2LT)** 〔required〕
+- Deep integration with its IO ports, storage service and tick-rate systems for high-volume throughput
+
+**Thunderbolt Core (AE2LT infrastructure)** 〔required〕
+- Uses its fast autocrafting planner for large-scale crafting tasks
+
+**NeoEcoAE** 〔required〕
+- ECO - LE9 storage matrix (Quantum Omni) series: 1M–274G MiB omni storage
+- ECO drive / storage system integration with consumption display
+
+**AE2 OmniCells** 〔required〕
+- Omni cell format support for extra-large universal storage
+
+**AppFlux** 〔optional〕
+- Draws FE power from the AppFlux wireless energy network to recharge AE power items (e.g. energy cells) and hatches
+
+**Mekanism** 〔optional〕
+- Quantum machine hatches can store chemicals directly (IChemicalHandler)
+- Chemicals can be accessed through the ME network (Mekanism chemical keys)
+- Stellar simulations: Metallurgic Surge, Ethylene Enrichment, Fission Reactor Process (ethylene fuel)
+- Astral Nexus armor grants Mekanism radiation immunity
+
+**Advanced AE** 〔optional〕
+- Stellar simulation for advanced quantum products
+
+**KubeJS** 〔optional〕
+- Register and edit custom recipes, including stellar simulations
+
+**JEI** 〔optional〕
+- All recipe categories: DMA, quantum multiblocks, stellar simulations, Wither summoning
+- Click a controller to view the 3D multiblock structure preview
+
+**Jade (WAILA)** 〔required〕
+- Multiblock status and Quantum Pattern Hatch cache display
+
+**ProjectE / Project Expansion** 〔optional〕
+- Transmutation interfaces interoperate with ME storage
+
+**GuideME** 〔optional〕
+- In-game illustrated tutorials (open with the Guide key)
+
+**GeckoLib** 〔optional〕
+- UFO armor and entity animations
 
 ## Dependencies
 
