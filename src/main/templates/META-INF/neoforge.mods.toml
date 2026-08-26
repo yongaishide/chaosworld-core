@@ -54,7 +54,7 @@ Stellar Nexus: simulate stellar physics (Red Giant Collapse, Supernova Harvest, 
 
 Mega storage: White Dwarf / Pulsar / Neutron Star cells up to 256T, star matter progression, catalysts, UFO tools & armor, Astral Nexus set, Reality Ripper, stellar fluids, ACC/SCM containment and the Structure Terminal.
 
-Integrates with ExtendedAE+, Thunderbolt, AE2LT, NeoEcoAE, AE2 OmniCells, Mekanism, KubeJS, JEI and Jade.
+Integrates with ExtendedAE+, AE2 Lightning Tech (AE2LT) + Thunderbolt Core, NeoEcoAE, AE2 OmniCells, Mekanism, KubeJS, JEI and Jade.
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.

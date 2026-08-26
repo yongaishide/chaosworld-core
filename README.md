@@ -56,7 +56,7 @@ Nuclear Star → Neutronium Sphere → Enriched Neutronium Sphere → Charged En
 - 流体：UU 物质、UU 增幅剂、寒冰之尘 / 凝胶寒冰、液体星光、原初物质、原始恒星等离子体、超越物质、时空流体、稳定冷却剂等
 - **Aether Containment Capsule（ACC）**：安全储存危险流体
 - **Safe Containment Matter（SCM）**：收容危险物品
-- 凋灵召唤重构：搭建结构并手持 Cryptid Core 右键，可召唤 4000 血的强化凋灵
+- 凋灵召唤重构：搭建结构并手持苦难核心（Cryptid Core）右键，可召唤 4000 血的强化凋灵
 
 ### 实用工具
 
@@ -65,7 +65,7 @@ Nuclear Star → Neutronium Sphere → Enriched Neutronium Sphere → Charged En
 
 ### 兼容性
 
-- **AE2 生态**：ExtendedAE+、Thunderbolt、AE2LT、NeoEcoAE、AE2 OmniCells、AppFlux
+- **AE2 生态**：ExtendedAE+、AE2 Lightning Tech（AE2LT 闪电科技）与 Thunderbolt Core（其底层库）、NeoEcoAE、AE2 OmniCells、AppFlux
 - **Mekanism**：化学物质存储与自动化联动
 - **KubeJS**：自定义配方；**JEI**：完整配方分类与 3D 多方块预览；**Jade**：多方块状态显示
 
@@ -76,7 +76,7 @@ Nuclear Star → Neutronium Sphere → Enriched Neutronium Sphere → Charged En
 - NeoForge **21.1.x**
 - Minecraft **1.21.1**
 - Applied Energistics 2（AE2）`19.2.17+`
-- ExtendedAE+ `1.5.5+`、Jade、Thunderbolt、AE2LT、NeoEcoAE、AE2 OmniCells
+- ExtendedAE+ `1.5.5+`、Jade、AE2 Lightning Tech（AE2LT）`2.0.9+`、Thunderbolt Core `1.0.1+`、NeoEcoAE、AE2 OmniCells
 
 ---
 
@@ -147,7 +147,7 @@ Nuclear Star → Neutronium Sphere → Enriched Neutronium Sphere → Charged En
 - Fluids: UU Matter, UU Amplifier, Cryotheum Dust / Gelid Cryotheum, Liquid Starlight, Primordial Matter, Raw Star Matter Plasma, Transcending Matter, Spatial/Temporal Fluid, Stable Coolant and more
 - **Aether Containment Capsule (ACC)**: safely store hazardous fluids
 - **Safe Containment Matter (SCM)**: contain hazardous items
-- Wither summoning rework: build the structure and right-click with a Cryptid Core to summon a 4000 HP empowered Wither
+- Wither summoning rework: build the structure and right-click with a Cryptid Core (苦难核心) to summon a 4000 HP empowered Wither
 
 ### Utilities
 
@@ -156,7 +156,7 @@ Nuclear Star → Neutronium Sphere → Enriched Neutronium Sphere → Charged En
 
 ### Compatibility
 
-- **AE2 ecosystem**: ExtendedAE+, Thunderbolt, AE2LT, NeoEcoAE, AE2 OmniCells, AppFlux
+- **AE2 ecosystem**: ExtendedAE+, AE2 Lightning Tech (AE2LT) with its Thunderbolt Core infrastructure, NeoEcoAE, AE2 OmniCells, AppFlux
 - **Mekanism**: chemical storage and automation integration
 - **KubeJS**: custom recipes; **JEI**: full recipe categories with 3D multiblock preview; **Jade**: multiblock status display
 
@@ -165,7 +165,7 @@ Nuclear Star → Neutronium Sphere → Enriched Neutronium Sphere → Charged En
 - NeoForge **21.1.x**
 - Minecraft **1.21.1**
 - Applied Energistics 2 (AE2) `19.2.17+`
-- ExtendedAE+ `1.5.5+`, Jade, Thunderbolt, AE2LT, NeoEcoAE, AE2 OmniCells
+- ExtendedAE+ `1.5.5+`, Jade, AE2 Lightning Tech (AE2LT) `2.0.9+`, Thunderbolt Core `1.0.1+`, NeoEcoAE, AE2 OmniCells
 
 ## License
 
