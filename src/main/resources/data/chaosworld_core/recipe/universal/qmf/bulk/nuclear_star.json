@@ -1,0 +1,40 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 1600000000,
+  "fluid_inputs": [
+    {
+      "amount": 320000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:raw_star_matter_plasma"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_fragment_block"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:neutron_star_fragment_block"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:pulsar_fragment_block"
+      }
+    }
+  ],
+  "item_output": {
+    "count": 64,
+    "id": "chaosworld_core:nuclear_star"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/nuclear_star",
+  "time": 3000
+}

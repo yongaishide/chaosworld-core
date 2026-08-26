@@ -1,0 +1,41 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 20000,
+  "fluid_inputs": [
+    {
+      "amount": 500,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "minecraft:netherite_ingot"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "minecraft:blue_ice"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "ae2:sky_stone_block"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 4,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:white_dwarf_fragment_ingot"
+    }
+  ],
+  "time": 220
+}

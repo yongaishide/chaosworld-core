@@ -1,0 +1,29 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 128000000,
+  "fluid_inputs": [
+    {
+      "amount": 128000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_output": {
+    "amount": 1,
+    "id": "chaosworld_core:source_temporal_fluid"
+  },
+  "fluid_output_amount": 320000,
+  "item_inputs": [
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:quantum_anomaly"
+      }
+    }
+  ],
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/source_temporal_fluid",
+  "time": 400
+}

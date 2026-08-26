@@ -1,0 +1,94 @@
+{
+  "type": "chaosworld_core:stellar_simulation",
+  "coolant_amount": 150000,
+  "cooling_level": 3,
+  "energy": 4200000000,
+  "field_tier": 3,
+  "fluid_inputs": [
+    {
+      "amount": 9500000,
+      "ingredient": {
+        "fluid": "chaosworld_core:raw_star_matter_plasma"
+      }
+    },
+    {
+      "amount": 2500000,
+      "ingredient": {
+        "fluid": "chaosworld_core:uu_matter"
+      }
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "#": 2500000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_liquid_starlight_fluid"
+    },
+    {
+      "#": 900000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_spatial_fluid"
+    },
+    {
+      "#": 900000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_stable_coolant"
+    },
+    {
+      "#": 600000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_neutron_star_fragment_fluid"
+    }
+  ],
+  "fuel_amount": 220000,
+  "fuel_fluid": "chaosworld_core:raw_star_matter_plasma",
+  "item_inputs": [
+    {
+      "amount": 220,
+      "ingredient": {
+        "item": "chaosworld_core:enriched_neutronium_sphere"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:quantum_anomaly"
+      }
+    },
+    {
+      "amount": 32768,
+      "ingredient": {
+        "item": "ae2:matter_ball"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 15000000,
+      "#t": "ae2:i",
+      "id": "minecraft:gold_ingot"
+    },
+    {
+      "#": 1500000,
+      "#t": "ae2:i",
+      "id": "minecraft:diamond"
+    },
+    {
+      "#": 1500000,
+      "#t": "ae2:i",
+      "id": "minecraft:emerald"
+    },
+    {
+      "#": 9000000,
+      "#t": "ae2:i",
+      "id": "minecraft:lapis_lazuli"
+    },
+    {
+      "#": 7000000,
+      "#t": "ae2:i",
+      "id": "minecraft:glowstone_dust"
+    }
+  ],
+  "simulation_name": "Massive Gold Synthesis",
+  "time": 8400
+}

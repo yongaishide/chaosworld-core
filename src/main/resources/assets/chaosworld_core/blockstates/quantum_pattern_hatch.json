@@ -1,0 +1,33 @@
+{
+  "variants": {
+    "push_direction=all": {
+      "model": "chaosworld_core:block/quantum_pattern_hatch"
+    },
+    "push_direction=down": {
+      "model": "chaosworld_core:block/quantum_pattern_hatch_oriented",
+      "x": 180
+    },
+    "push_direction=east": {
+      "model": "chaosworld_core:block/quantum_pattern_hatch_oriented",
+      "x": 90,
+      "y": 90
+    },
+    "push_direction=north": {
+      "model": "chaosworld_core:block/quantum_pattern_hatch_oriented",
+      "x": 90
+    },
+    "push_direction=south": {
+      "model": "chaosworld_core:block/quantum_pattern_hatch_oriented",
+      "x": 90,
+      "y": 180
+    },
+    "push_direction=up": {
+      "model": "chaosworld_core:block/quantum_pattern_hatch_oriented"
+    },
+    "push_direction=west": {
+      "model": "chaosworld_core:block/quantum_pattern_hatch_oriented",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

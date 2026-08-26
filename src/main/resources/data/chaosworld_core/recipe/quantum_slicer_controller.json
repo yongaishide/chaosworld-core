@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "chaosworld_core:dimensional_processor"
+    },
+    "E": {
+      "item": "chaosworld_core:dimensional_matter_assembler"
+    },
+    "F": {
+      "item": "chaosworld_core:quantum_lattice_frame"
+    },
+    "G": {
+      "item": "chaosworld_core:white_dwarf_storage_component_64g"
+    },
+    "P": {
+      "item": "chaosworld_core:white_dwarf_storage_component_1g"
+    },
+    "Q": {
+      "item": "chaosworld_core:quantum_hyper_mechanical_casing"
+    }
+  },
+  "pattern": [
+    "PGP",
+    "QDQ",
+    "FEF"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:quantum_slicer_controller"
+  }
+}

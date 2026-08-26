@@ -1,0 +1,40 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 12800000,
+  "fluid_inputs": [
+    {
+      "amount": 76800,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 128,
+      "ingredient": {
+        "item": "chaosworld_core:neutron_star_fragment_ingot"
+      }
+    },
+    {
+      "amount": 128,
+      "ingredient": {
+        "item": "minecraft:lodestone"
+      }
+    },
+    {
+      "amount": 256,
+      "ingredient": {
+        "item": "minecraft:lightning_rod"
+      }
+    }
+  ],
+  "item_output": {
+    "count": 128,
+    "id": "chaosworld_core:pulsar_fragment_ingot"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/ingot/pulsar_fragment",
+  "time": 640
+}

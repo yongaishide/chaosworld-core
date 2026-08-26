@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chaosworld_core:neutron_star_cell_housing"
+    },
+    {
+      "item": "chaosworld_core:neutron_star_storage_component_4t", "count": 10
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:neutron_star_cell_beaco"
+  }
+}

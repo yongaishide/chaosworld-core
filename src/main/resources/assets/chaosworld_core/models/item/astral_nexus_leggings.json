@@ -1,0 +1,6 @@
+{
+    "textures":  {
+                     "layer0":  "chaosworld_core:item/astral_nexus_leggings"
+                 },
+    "parent":  "minecraft:item/generated"
+}

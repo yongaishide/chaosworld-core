@@ -1,0 +1,8 @@
+{
+  "type": "ae2:storage_cell_disassembly",
+  "cell": "chaosworld_core:pulsar_cell_singularity",
+  "cell_disassembly_items": [
+    {"id": "chaosworld_core:pulsar_cell_housing", "count": 1},
+    {"id": "chaosworld_core:pulsar_storage_component_256p", "count": 10}
+  ]
+}

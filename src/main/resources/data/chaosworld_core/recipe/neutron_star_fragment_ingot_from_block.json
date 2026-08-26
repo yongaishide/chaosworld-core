@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chaosworld_core:neutron_star_fragment_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "chaosworld_core:neutron_star_fragment_ingot"
+  }
+}

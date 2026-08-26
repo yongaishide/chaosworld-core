@@ -1,0 +1,40 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 3200000,
+  "fluid_inputs": [
+    {
+      "amount": 32000,
+      "fluid": {
+        "amount": 1,
+        "id": "minecraft:water"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "minecraft:netherite_ingot"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:obsidian_matrix"
+      }
+    },
+    {
+      "amount": 128,
+      "ingredient": {
+        "item": "minecraft:blue_ice"
+      }
+    }
+  ],
+  "item_output": {
+    "count": 64,
+    "id": "chaosworld_core:thermal_resistor_plating"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/thermal_resistor_plating",
+  "time": 100
+}

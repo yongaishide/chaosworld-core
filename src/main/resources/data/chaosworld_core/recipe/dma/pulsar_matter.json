@@ -1,0 +1,44 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 15000000,
+  "fluid_inputs": [
+    {
+      "amount": 2000,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_pulsar_fragment_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "chaosworld_core:corporeal_matter"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "chaosworld_core:uu_matter_crystal"
+      }
+    },
+    {
+      "amount": 16,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "chaosworld_core:pulsar_fragment_block"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:pulsar_matter"
+    }
+  ],
+  "time": 1800
+}

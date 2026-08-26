@@ -1,0 +1,46 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 48000000,
+  "fluid_inputs": [
+    {
+      "amount": 32000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 128,
+      "ingredient": {
+        "item": "chaosworld_core:printed_dimensional_processor"
+      }
+    },
+    {
+      "amount": 128,
+      "ingredient": {
+        "item": "ae2:printed_silicon"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "ae2:engineering_processor"
+      }
+    },
+    {
+      "amount": 1024,
+      "ingredient": {
+        "item": "ae2:fluix_dust"
+      }
+    }
+  ],
+  "item_output": {
+    "count": 128,
+    "id": "chaosworld_core:dimensional_processor"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/dimensional_processor",
+  "time": 500
+}

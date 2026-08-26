@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "chaosworld_core:me_massive_fluid_hatch"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "chaosworld_core:blocks/me_massive_fluid_hatch"
+}

@@ -1,0 +1,25 @@
+{
+  "parent": "chaosworld_core:item/ufoset/bow",
+  "overrides": [
+    {
+      "predicate": {
+        "pulling": 1
+      },
+      "model": "chaosworld_core:item/bow_1"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.65
+      },
+      "model": "chaosworld_core:item/bow_2"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.9
+      },
+      "model": "chaosworld_core:item/bow_3"
+    }
+  ]
+}

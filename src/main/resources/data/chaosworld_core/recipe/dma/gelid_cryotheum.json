@@ -1,0 +1,29 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 50000,
+  "fluid_inputs": [
+    {
+      "amount": 2000,
+      "ingredient": {
+        "fluid": "minecraft:water"
+      }
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "#": 16000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_gelid_cryotheum"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "chaosworld_core:dust_cryotheum"
+      }
+    }
+  ],
+  "item_outputs": [],
+  "time": 100
+}

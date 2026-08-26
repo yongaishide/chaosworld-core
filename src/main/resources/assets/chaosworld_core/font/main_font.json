@@ -1,0 +1,12 @@
+{
+  "providers": [
+    {
+      "type": "ttf",
+      "file": "chaosworld_core:jetbrainsmono-medium.ttf",
+      "shift": [0, 0],
+      "size": 11.0,
+      "oversample": 2.0,
+      "skip": ""
+    }
+  ]
+}

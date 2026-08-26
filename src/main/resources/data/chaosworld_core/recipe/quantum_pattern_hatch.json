@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "chaosworld_core:white_dwarf_storage_component_4g"
+    },
+    "F": {
+      "item": "chaosworld_core:quantum_lattice_frame"
+    },
+    "H": {
+      "item": "ae2:pattern_provider"
+    },
+    "P": {
+      "item": "chaosworld_core:dimensional_processor"
+    },
+    "Q": {
+      "item": "chaosworld_core:quantum_hyper_mechanical_casing"
+    }
+  },
+  "pattern": [
+    "QCQ",
+    "PHP",
+    "QFQ"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:quantum_pattern_hatch"
+  }
+}

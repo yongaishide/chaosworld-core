@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "chaosworld_core:source_gelid_cryotheum",
+  "loader": "neoforge:fluid_container"
+}

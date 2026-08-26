@@ -1,0 +1,29 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 1000000,
+  "fluid_inputs": [
+    {
+      "amount": 500,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_uu_amplifier_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "amount": 9,
+      "ingredient": {
+        "item": "chaosworld_core:neutron_star_fragment_ingot"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:neutronium_sphere"
+    }
+  ],
+  "time": 600
+}

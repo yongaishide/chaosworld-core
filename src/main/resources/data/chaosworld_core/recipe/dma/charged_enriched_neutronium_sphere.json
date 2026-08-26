@@ -1,0 +1,47 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 80000000,
+  "fluid_inputs": [
+    {
+      "amount": 16000,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "chaosworld_core:enriched_neutronium_sphere"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "chaosworld_core:nuclear_star"
+      }
+    },
+    {
+      "amount": 8,
+      "ingredient": {
+        "item": "chaosworld_core:pulsar_matter"
+      }
+    },
+    {
+      "amount": 16,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:charged_enriched_neutronium_sphere"
+    }
+  ],
+  "time": 12000
+}

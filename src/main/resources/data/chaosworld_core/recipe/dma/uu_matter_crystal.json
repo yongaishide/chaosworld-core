@@ -1,0 +1,28 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 5000000,
+  "fluid_inputs": [
+    {
+      "amount": 2500,
+      "ingredient": {
+        "fluid": "chaosworld_core:uu_matter"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "minecraft:amethyst_shard"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:uu_matter_crystal"
+    }
+  ],
+  "time": 400
+}

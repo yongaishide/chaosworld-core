@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chaosworld_core:pulsar_cell_housing"
+    },
+    {
+      "item": "chaosworld_core:pulsar_storage_component_256p", "count": 10
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:pulsar_cell_singularity"
+  }
+}

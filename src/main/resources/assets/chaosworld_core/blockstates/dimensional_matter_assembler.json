@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=north,working=false": {"model": "chaosworld_core:block/dimensional_matter_assembler"},
+    "facing=south,working=false": {"model": "chaosworld_core:block/dimensional_matter_assembler", "y": 180},
+    "facing=east,working=false": {"model": "chaosworld_core:block/dimensional_matter_assembler", "y": 90},
+    "facing=west,working=false": {"model": "chaosworld_core:block/dimensional_matter_assembler", "y": 270},
+    "facing=north,working=true": {"model": "chaosworld_core:block/dimensional_matter_assembler_on"},
+    "facing=south,working=true": {"model": "chaosworld_core:block/dimensional_matter_assembler_on", "y": 180},
+    "facing=east,working=true": {"model": "chaosworld_core:block/dimensional_matter_assembler_on", "y": 90},
+    "facing=west,working=true": {"model": "chaosworld_core:block/dimensional_matter_assembler_on", "y": 270}
+  }
+}

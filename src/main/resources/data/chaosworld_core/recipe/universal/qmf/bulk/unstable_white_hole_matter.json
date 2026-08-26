@@ -1,0 +1,34 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 640000000,
+  "fluid_inputs": [
+    {
+      "amount": 128000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 256,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_matter"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:quantum_anomaly"
+      }
+    }
+  ],
+  "item_output": {
+    "count": 64,
+    "id": "chaosworld_core:unstable_white_hole_matter"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/unstable_white_hole_matter",
+  "time": 4000
+}

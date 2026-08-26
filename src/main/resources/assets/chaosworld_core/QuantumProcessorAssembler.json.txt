@@ -1,0 +1,10 @@
+{
+  "name": "",
+  "statePosArrayList": "{blockstatemap:[{Name:\"gtlcore:enhance_hyper_mechanical_casing\"},{Name:\"gtlcore:hsss_reinforced_borosilicate_glass\"},{Name:\"minecraft:air\"},{Name:\"kubejs:dimensional_stability_casing\"},{Name:\"gtceu:hyper_reactor\",Properties:{facing:\"east\",server_tick:\"false\",upwards_facing:\"north\"}}],endpos:{X:0,Y:4,Z:4},startpos:{X:-4,Y:0,Z:0},statelist:[I;0,0,0,0,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,2,2,2,1,1,2,3,2,1,1,2,2,2,1,0,1,1,1,0,0,0,0,0,4,1,2,3,2,1,1,3,3,3,1,1,2,3,2,1,0,1,1,1,0,0,0,0,0,0,1,2,2,2,1,1,2,3,2,1,1,2,2,2,1,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,1,1,1,0,0,1,1,1,0,0,0,0,0,0]}",
+  "requiredItems": {
+    "ae2:quartz_vibrant_glass": 45,
+    "chaosworld_core:quantum_hyper_mechanical_casing": 52,
+    "chaosworld_core:quantum_matter_fabricator": 1,
+    "chaosworld_core:stellar_field_generator_t1": 7
+  }
+}

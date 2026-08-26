@@ -1,0 +1,100 @@
+{
+  "type": "chaosworld_core:stellar_simulation",
+  "coolant_amount": 250000,
+  "cooling_level": 3,
+  "energy": 6500000000,
+  "field_tier": 3,
+  "fluid_inputs": [
+    {
+      "amount": 14000000,
+      "ingredient": {
+        "fluid": "chaosworld_core:raw_star_matter_plasma"
+      }
+    },
+    {
+      "amount": 4000000,
+      "ingredient": {
+        "fluid": "chaosworld_core:uu_matter"
+      }
+    },
+    {
+      "amount": 1500000,
+      "ingredient": {
+        "fluid": "chaosworld_core:transcending_matter"
+      }
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "#": 3000000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_liquid_starlight_fluid"
+    },
+    {
+      "#": 1200000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_temporal_fluid"
+    },
+    {
+      "#": 1000000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_spatial_fluid"
+    },
+    {
+      "#": 800000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_primordial_matter_fluid"
+    }
+  ],
+  "fuel_amount": 320000,
+  "fuel_fluid": "chaosworld_core:raw_star_matter_plasma",
+  "item_inputs": [
+    {
+      "amount": 320,
+      "ingredient": {
+        "item": "chaosworld_core:enriched_neutronium_sphere"
+      }
+    },
+    {
+      "amount": 128,
+      "ingredient": {
+        "item": "chaosworld_core:quantum_anomaly"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:dark_matter"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 5000000,
+      "#t": "ae2:i",
+      "id": "minecraft:netherite_ingot"
+    },
+    {
+      "#": 12000000,
+      "#t": "ae2:i",
+      "id": "minecraft:netherite_scrap"
+    },
+    {
+      "#": 3000000,
+      "#t": "ae2:i",
+      "id": "minecraft:ancient_debris"
+    },
+    {
+      "#": 9000000,
+      "#t": "ae2:i",
+      "id": "minecraft:gold_ingot"
+    },
+    {
+      "#": 10000000,
+      "#t": "ae2:i",
+      "id": "minecraft:quartz"
+    }
+  ],
+  "simulation_name": "Massive Netherite Synthesis",
+  "time": 12000
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "item": "chaosworld_core:dimensional_processor"
+    },
+    "M": {
+      "item": "chaosworld_core:white_dwarf_storage_component_16g"
+    },
+    "P": {
+      "item": "chaosworld_core:pulsar_fragment_ingot"
+    },
+    "S": {
+      "item": "chaosworld_core:staff"
+    }
+  },
+  "pattern": [
+    " MS",
+    "P D",
+    "  S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:bow"
+  }
+}

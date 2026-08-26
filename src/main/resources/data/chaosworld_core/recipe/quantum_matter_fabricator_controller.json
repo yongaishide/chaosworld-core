@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "chaosworld_core:white_dwarf_storage_component_1g"
+    },
+    "C": {
+      "item": "chaosworld_core:white_dwarf_storage_component_4g"
+    },
+    "D": {
+      "item": "chaosworld_core:white_dwarf_storage_component_256g"
+    },
+    "E": {
+      "item": "chaosworld_core:white_dwarf_storage_component_64g"
+    },
+    "Q": {
+      "item": "chaosworld_core:quantum_hyper_mechanical_casing"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "DQD",
+    "AEA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:quantum_matter_fabricator_controller"
+  }
+}

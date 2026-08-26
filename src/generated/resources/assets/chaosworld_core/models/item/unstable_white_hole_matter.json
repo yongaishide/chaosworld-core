@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "chaosworld_core:item/unstable_white_hole_matter"
+  }
+}

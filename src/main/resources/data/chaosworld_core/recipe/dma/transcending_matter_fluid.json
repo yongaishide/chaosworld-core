@@ -1,0 +1,28 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 4000000,
+  "fluid_inputs": [
+    {
+      "amount": 10000,
+      "ingredient": {
+        "fluid": "chaosworld_core:raw_star_matter_plasma"
+      }
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "#": 10000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:transcending_matter"
+    }
+  ],
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "chaosworld_core:unstable_white_hole_matter"
+      }
+    }
+  ],
+  "item_outputs": [],
+  "time": 1800
+}

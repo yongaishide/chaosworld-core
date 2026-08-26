@@ -1,0 +1,28 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 2000000,
+  "fluid_inputs": [
+    {
+      "amount": 2000,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "#": 5000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_temporal_fluid"
+    }
+  ],
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "chaosworld_core:quantum_anomaly"
+      }
+    }
+  ],
+  "item_outputs": [],
+  "time": 400
+}

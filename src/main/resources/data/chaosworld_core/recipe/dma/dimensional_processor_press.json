@@ -1,0 +1,41 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 500000,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "minecraft:iron_block"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "chaosworld_core:obsidian_matrix"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "ae2:engineering_processor"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:dimensional_processor_press"
+    }
+  ],
+  "time": 600
+}

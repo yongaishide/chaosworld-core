@@ -1,0 +1,39 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 240000000,
+  "fluid_inputs": [
+    {
+      "amount": 32000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_spatial_fluid"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 24,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_storage_component_4g"
+      }
+    },
+    {
+      "amount": 32,
+      "ingredient": {
+        "item": "chaosworld_core:neutron_star_matter"
+      }
+    },
+    {
+      "amount": 128,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    }
+  ],
+  "item_output": {
+    "id": "chaosworld_core:white_dwarf_storage_component_16g"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/tesseract_component_matrix_batch",
+  "time": 2400
+}

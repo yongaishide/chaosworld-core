@@ -1,0 +1,1 @@
+{"id":"chaosworld_core:advanced_alloy/plate/stainless_steel_plate","ingredients":[{"count":1,"ingredient":{"item":"chaosworld_core:ingot_stainless_steel"}}],"energy":1000,"process_time":40,"type":"useless_mod:advanced_alloy_furnace","outputs":[{"id":"chaosworld_core:plate_stainless_steel"}],"mold":{"item":"useless_mod:metal_mold_plate"}}

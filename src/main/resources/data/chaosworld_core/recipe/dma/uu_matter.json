@@ -1,0 +1,29 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 100000,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_uu_amplifier_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "#": 250,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:uu_matter"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "ae2:matter_ball"
+      }
+    }
+  ],
+  "item_outputs": [],
+  "time": 300
+}

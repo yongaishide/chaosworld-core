@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "item": "chaosworld_core:dimensional_processor"
+    },
+    "E": {
+      "item": "ae2:controller"
+    },
+    "O": {
+      "item": "chaosworld_core:obsidian_matrix"
+    },
+    "Q": {
+      "item": "chaosworld_core:quantum_anomaly"
+    },
+    "S": {
+      "item": "ae2:singularity"
+    }
+  },
+  "pattern": [
+    " Q ",
+    "SDE",
+    " O "
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:structure_scanner"
+  }
+}

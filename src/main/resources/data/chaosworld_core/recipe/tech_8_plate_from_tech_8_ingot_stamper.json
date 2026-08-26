@@ -1,0 +1,1 @@
+{"input":{"count":1,"item":"chaosworld_core:ingot_tech_8"},"mold":{"count":1,"item":"immersiveengineering:mold_plate"},"neoforge:conditions":[{"type":"neoforge:mod_loaded","modid":"immersiveengineering"},{"type":"neoforge:mod_loaded","modid":"mekmm"}],"type":"mekmm:stamper","output":{"count":1,"id":"chaosworld_core:plate_tech_8"}}

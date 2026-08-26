@@ -1,0 +1,34 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 640000,
+  "fluid_inputs": [
+    {
+      "amount": 1280,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_fragment_ingot"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "ae2:tiny_tnt"
+      }
+    }
+  ],
+  "item_output": {
+    "count": 64,
+    "id": "chaosworld_core:white_dwarf_fragment_dust"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/white_dwarf_dust",
+  "time": 60
+}

@@ -1,0 +1,28 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 10240000000,
+  "fluid_inputs": [
+    {
+      "amount": 1024000,
+      "fluid": {
+        "amount": 1,
+        "id": "minecraft:water"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 57344,
+      "ingredient": {
+        "item": "chaosworld_core:scrap"
+      }
+    }
+  ],
+  "item_output": {
+    "count": 1024,
+    "id": "chaosworld_core:scrap_box"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/scrap_box_massive",
+  "time": 2000
+}

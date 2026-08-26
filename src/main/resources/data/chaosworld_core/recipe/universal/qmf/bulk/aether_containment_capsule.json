@@ -1,0 +1,34 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 32000000,
+  "fluid_inputs": [
+    {
+      "amount": 64000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_spatial_fluid"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 128,
+      "ingredient": {
+        "item": "chaosworld_core:safe_containment_matter"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_storage_component_1g"
+      }
+    }
+  ],
+  "item_output": {
+    "count": 64,
+    "id": "chaosworld_core:aether_containment_capsule"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/aether_containment_capsule",
+  "time": 400
+}

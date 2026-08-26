@@ -1,0 +1,35 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 32000000,
+  "fluid_inputs": [
+    {
+      "amount": 6400,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_uu_amplifier_fluid"
+      }
+    }
+  ],
+  "fluid_output": {
+    "amount": 1,
+    "id": "chaosworld_core:source_liquid_starlight_fluid"
+  },
+  "fluid_output_amount": 640000,
+  "item_inputs": [
+    {
+      "amount": 256,
+      "ingredient": {
+        "item": "chaosworld_core:obsidian_matrix"
+      }
+    },
+    {
+      "amount": 1024,
+      "ingredient": {
+        "item": "minecraft:nether_star"
+      }
+    }
+  ],
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/liquid_starlight",
+  "time": 400
+}

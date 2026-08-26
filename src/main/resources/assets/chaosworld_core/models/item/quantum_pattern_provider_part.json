@@ -1,0 +1,8 @@
+{
+  "parent": "ae2:item/cable_pattern_provider",
+  "textures": {
+    "sides": "chaosworld_core:block/quantum_pattern_hatch",
+    "back": "chaosworld_core:block/quantum_pattern_hatch",
+    "front": "chaosworld_core:block/quantum_pattern_hatch"
+  }
+}

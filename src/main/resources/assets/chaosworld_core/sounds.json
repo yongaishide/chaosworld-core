@@ -1,0 +1,19 @@
+{
+  "block.dma.alarm": {
+    "category": "block",
+    "subtitle": "subtitles.ufo.dma_alarm",
+    "sounds": [
+      "chaosworld_core:block/dma/dma_alarm"
+    ]
+  },
+  "block.dma.work": {
+    "category": "block",
+    "subtitle": "subtitles.ufo.dma_work",
+    "sounds": [
+      {
+        "name": "chaosworld_core:block/dma/dma_work",
+        "stream": true
+      }
+    ]
+  }
+}

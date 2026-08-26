@@ -26,7 +26,12 @@ sourceSets.main.resources {
     exclude("**/.cache") // datagen cache files
 }
 
+tasks.named('processResources', ProcessResources).configure {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
 repositories {
+    mavenCentral()
     maven {url = "https://libraries.minecraft.net/"}
     maven {url = "https://neoforged.forgecdn.net/releases"}
     maven {url = "https://neoforged.forgecdn.net/mojang-meta"}
@@ -127,9 +132,32 @@ configurations {
 }
 
 dependencies {
-<<<<<<< HEAD
     // Local jars in libs/ (Flux Networks, MI, MoreFluxStorage, etc.)
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly files('run/mods/ProjectE-1.21.1-PE1.1.0.jar')
+    compileOnly files('run/mods/projectexpansion-1.21.1-1.0.6.jar')
+    compileOnly files('run/mods/appliedenergistics2-19.2.17.jar')
+    compileOnly files('run/mods/thunderbolt-1.0.6.jar')
+    compileOnly files('run/mods/ae2lt-2.0.9.jar')
+    compileOnly files('run/mods/ExtendedAE-1.21-2.2.35-neoforge.jar')
+    compileOnly files('run/mods/Glodium-1.21-2.2-neoforge.jar')
+    compileOnly files('run/mods/FluxNetworks-1.21.1-8.0.0.jar')
+    compileOnly files('run/mods/more_flux_storage-1.21.1-1.0.3.jar')
+    compileOnly files('run/mods/guideme-21.1.17.jar')
+    compileOnly files('run/mods/ldlib2-neoforge-1.21.1-2.2.35-all.jar')
+    compileOnly files('run/mods/neoecoae-21.2.0.jar')
+    compileOnly files('run/mods/ae2omnicells-1.21.1-neoforge-1.1.6.jar')
+compileOnly "org.appliedenergistics.yoga:yoga:1.0.0"
+compileOnly "dev.vfyjxf:taffy:1.1.4"
+compileOnly files('run/mods/kubejs-neoforge-2101.7.2-build.290.jar')
+compileOnly files('run/mods/rhino-2101.2.7-build.77.jar')
+compileOnly files('run/mods/ae2addonlib-1.0.3-1.21.1.jar')
+    compileOnly files('run/mods/geckolib-neoforge-1.21.1-4.9.2.jar')
+    compileOnly files('run/mods/Mekanism-1.21.1-10.7.19.85.jar')
+    compileOnly files('run/mods/jei-1.21.1-neoforge-19.44.0.401.jar')
+    compileOnly files('run/mods/AppliedFlux-1.21-2.1.5-neoforge.jar')
+    compileOnly files('run/mods/Jade-1.21.1-NeoForge-15.10.6.jar')
+    compileOnly files('run/mods/extendedae_plus-1.5.5.jar')
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

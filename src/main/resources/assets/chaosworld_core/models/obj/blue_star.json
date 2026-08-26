@@ -1,0 +1,9 @@
+{
+  "loader": "neoforge:obj",
+  "flip_v": true,
+  "model": "chaosworld_core:models/obj/star.obj",
+  "textures": {
+    "texture0": "chaosworld_core:block/obj/blue_star_layer",
+    "particle": "chaosworld_core:block/obj/blue_star_layer"
+  }
+}

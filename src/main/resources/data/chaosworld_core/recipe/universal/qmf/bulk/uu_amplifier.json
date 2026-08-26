@@ -1,0 +1,29 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 1280000,
+  "fluid_inputs": [
+    {
+      "amount": 64000,
+      "fluid": {
+        "amount": 1,
+        "id": "minecraft:water"
+      }
+    }
+  ],
+  "fluid_output": {
+    "amount": 1,
+    "id": "chaosworld_core:source_uu_amplifier_fluid"
+  },
+  "fluid_output_amount": 16000,
+  "item_inputs": [
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:scrap_box"
+      }
+    }
+  ],
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/uu_amplifier",
+  "time": 300
+}

@@ -1,0 +1,29 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 6400000,
+  "fluid_inputs": [
+    {
+      "amount": 64000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_uu_amplifier_fluid"
+      }
+    }
+  ],
+  "fluid_output": {
+    "amount": 1,
+    "id": "chaosworld_core:uu_matter"
+  },
+  "fluid_output_amount": 16000,
+  "item_inputs": [
+    {
+      "amount": 4096,
+      "ingredient": {
+        "item": "ae2:matter_ball"
+      }
+    }
+  ],
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/uu_matter",
+  "time": 300
+}

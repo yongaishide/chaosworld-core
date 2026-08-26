@@ -1,0 +1,34 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 60000,
+  "fluid_inputs": [
+    {
+      "amount": 200,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "#": 1000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_neutron_star_fragment_fluid"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "chaosworld_core:neutron_star_fragment_ingot"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:blue_ice"
+      }
+    }
+  ],
+  "item_outputs": [],
+  "time": 150
+}

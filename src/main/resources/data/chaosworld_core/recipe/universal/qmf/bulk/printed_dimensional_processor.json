@@ -1,0 +1,40 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 12800000,
+  "fluid_inputs": [
+    {
+      "amount": 16000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 128,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_fragment_ingot"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor_press"
+      }
+    },
+    {
+      "amount": 256,
+      "ingredient": {
+        "item": "ae2:quartz_vibrant_glass"
+      }
+    }
+  ],
+  "item_output": {
+    "count": 64,
+    "id": "chaosworld_core:printed_dimensional_processor"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/printed_dimensional_processor",
+  "time": 240
+}

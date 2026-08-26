@@ -1,0 +1,28 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 6000000,
+  "fluid_inputs": [
+    {
+      "amount": 2000,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_primordial_matter_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "#": 5000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_spatial_fluid"
+    }
+  ],
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "chaosworld_core:nuclear_star"
+      }
+    }
+  ],
+  "item_outputs": [],
+  "time": 400
+}

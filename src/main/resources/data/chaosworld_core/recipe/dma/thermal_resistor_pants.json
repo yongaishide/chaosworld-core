@@ -1,0 +1,40 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 1200000,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "ingredient": {
+        "fluid": "minecraft:water"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "minecraft:netherite_leggings"
+      }
+    },
+    {
+      "amount": 7,
+      "ingredient": {
+        "item": "chaosworld_core:thermal_resistor_plating"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "minecraft:blue_ice"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:thermal_resistor_pants"
+    }
+  ],
+  "time": 500
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "chaosworld_core:white_dwarf_storage_component_16g"
+    },
+    "H": {
+      "item": "chaosworld_core:white_dwarf_storage_component_64g"
+    },
+    "I": {
+      "item": "minecraft:blue_ice"
+    },
+    "Q": {
+      "item": "chaosworld_core:quantum_hyper_mechanical_casing"
+    },
+    "S": {
+      "item": "chaosworld_core:white_dwarf_storage_component_256g"
+    },
+    "T": {
+      "item": "chaosworld_core:thermal_resistor_plating"
+    }
+  },
+  "pattern": [
+    "TIT",
+    "QCQ",
+    "HSH"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:quantum_cryoforge_controller"
+  }
+}

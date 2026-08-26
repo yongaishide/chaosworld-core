@@ -1,0 +1,56 @@
+{
+  "$schema": "schema.json",
+  "includes": ["common/common.json", "common/player_inventory.json", "common/toolbox.json"],
+  "background": {
+    "texture": "guis/dimensional_matter_assembler.png",
+    "textureWidth": 256,
+    "textureHeight": 256,
+    "srcRect": [0, 0, 176, 256]
+  },
+  "slots": {
+    "MACHINE_INPUT": {
+      "left": 44,
+      "top": 21,
+      "grid": "BREAK_AFTER_3COLS"
+    },
+    "MACHINE_OUTPUT": {
+      "left": 108,
+      "top": 40
+    },
+    "UFO_MACHINE_OUTPUT_2": {
+      "left": 108,
+      "top": 58
+    }
+  },
+  "text": {
+    "dialog_title": {
+      "text": {
+        "translate": "block.chaosworld_core.dimensional_matter_assembler"
+      },
+      "position": {
+        "left": 8,
+        "top": 6
+      }
+    }
+  },
+  "images": {
+    "progressBar": {
+      "texture": "guis/dimensional_matter_assembler.png",
+      "srcRect": [176, 0, 21, 12]
+    },
+    "powerAlert": {
+      "texture": "guis/dimensional_matter_assembler.png",
+      "srcRect": [176, 18, 18, 18]
+    }
+  },
+  "widgets": {
+    "progressBar": {
+      "left": 105,
+      "top": 42
+    },
+    "powerAlert": {
+      "left": 150,
+      "top": 30
+    }
+  }
+}

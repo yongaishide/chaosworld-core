@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "fullness=0": {
+      "model": "chaosworld_core:block/energy_cell_0"
+    },
+    "fullness=1": {
+      "model": "chaosworld_core:block/energy_cell_1"
+    },
+    "fullness=2": {
+      "model": "chaosworld_core:block/energy_cell_2"
+    },
+    "fullness=3": {
+      "model": "chaosworld_core:block/energy_cell_3"
+    },
+    "fullness=4": {
+      "model": "chaosworld_core:block/energy_cell_4"
+    }
+  }
+}

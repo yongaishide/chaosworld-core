@@ -1,0 +1,94 @@
+{
+  "type": "chaosworld_core:stellar_simulation",
+  "coolant_amount": 100000,
+  "cooling_level": 3,
+  "energy": 3000000000,
+  "field_tier": 3,
+  "fluid_inputs": [
+    {
+      "amount": 8000000,
+      "ingredient": {
+        "fluid": "chaosworld_core:raw_star_matter_plasma"
+      }
+    },
+    {
+      "amount": 2000000,
+      "ingredient": {
+        "fluid": "chaosworld_core:uu_matter"
+      }
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "#": 2000000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_liquid_starlight_fluid"
+    },
+    {
+      "#": 1500000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_uu_amplifier_fluid"
+    },
+    {
+      "#": 750000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_stable_coolant"
+    },
+    {
+      "#": 500000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_white_dwarf_fragment_fluid"
+    }
+  ],
+  "fuel_amount": 150000,
+  "fuel_fluid": "chaosworld_core:raw_star_matter_plasma",
+  "item_inputs": [
+    {
+      "amount": 160,
+      "ingredient": {
+        "item": "chaosworld_core:enriched_neutronium_sphere"
+      }
+    },
+    {
+      "amount": 1024,
+      "ingredient": {
+        "item": "chaosworld_core:obsidian_matrix"
+      }
+    },
+    {
+      "amount": 32768,
+      "ingredient": {
+        "item": "ae2:matter_ball"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 15000000,
+      "#t": "ae2:i",
+      "id": "minecraft:iron_ingot"
+    },
+    {
+      "#": 8000000,
+      "#t": "ae2:i",
+      "id": "minecraft:redstone"
+    },
+    {
+      "#": 6000000,
+      "#t": "ae2:i",
+      "id": "minecraft:quartz"
+    },
+    {
+      "#": 30000000,
+      "#t": "ae2:i",
+      "id": "minecraft:cobblestone"
+    },
+    {
+      "#": 4000000,
+      "#t": "ae2:i",
+      "id": "minecraft:obsidian"
+    }
+  ],
+  "simulation_name": "Massive Iron Synthesis",
+  "time": 7200
+}

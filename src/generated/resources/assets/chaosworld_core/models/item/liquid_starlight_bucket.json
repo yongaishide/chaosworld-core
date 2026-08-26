@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "chaosworld_core:source_liquid_starlight_fluid",
+  "loader": "neoforge:fluid_container"
+}

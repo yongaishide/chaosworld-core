@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chaosworld_core:pulsar_fragment_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "chaosworld_core:pulsar_fragment_ingot"
+  }
+}

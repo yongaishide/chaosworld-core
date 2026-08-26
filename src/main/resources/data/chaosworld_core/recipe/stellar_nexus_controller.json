@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "chaosworld_core:quantum_anomaly"
+    },
+    "C": {
+      "item": "chaosworld_core:entropy_computer_condensation_matrix"
+    },
+    "F": {
+      "item": "chaosworld_core:stellar_field_generator_t3"
+    },
+    "H": {
+      "item": "chaosworld_core:me_massive_output_hatch"
+    },
+    "T": {
+      "item": "chaosworld_core:ae_energy_input_hatch"
+    }
+  },
+  "pattern": [
+    "CFC",
+    "ATA",
+    "CHC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:stellar_nexus_controller"
+  }
+}

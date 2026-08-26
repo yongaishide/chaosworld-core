@@ -1,0 +1,39 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 50000,
+  "fluid_inputs": [
+    {
+      "amount": 500,
+      "ingredient": {
+        "fluid": "minecraft:water"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "minecraft:netherite_ingot"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "chaosworld_core:obsidian_matrix"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "minecraft:blue_ice"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:thermal_resistor_plating"
+    }
+  ],
+  "time": 100
+}

@@ -1,0 +1,28 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 3000000,
+  "fluid_inputs": [
+    {
+      "amount": 5000,
+      "ingredient": {
+        "fluid": "chaosworld_core:raw_star_matter_plasma"
+      }
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "#": 5000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_primordial_matter_fluid"
+    }
+  ],
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "chaosworld_core:quantum_anomaly"
+      }
+    }
+  ],
+  "item_outputs": [],
+  "time": 700
+}

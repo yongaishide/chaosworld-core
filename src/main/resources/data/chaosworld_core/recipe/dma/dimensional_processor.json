@@ -1,0 +1,46 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 750000,
+  "fluid_inputs": [
+    {
+      "amount": 500,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "chaosworld_core:printed_dimensional_processor"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "ae2:printed_silicon"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "ae2:engineering_processor"
+      }
+    },
+    {
+      "amount": 16,
+      "ingredient": {
+        "item": "ae2:fluix_dust"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 2,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:dimensional_processor"
+    }
+  ],
+  "time": 500
+}

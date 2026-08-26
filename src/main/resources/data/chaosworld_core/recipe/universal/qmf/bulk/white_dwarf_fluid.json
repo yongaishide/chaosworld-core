@@ -1,0 +1,35 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 2560000,
+  "fluid_inputs": [
+    {
+      "amount": 12800,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_output": {
+    "amount": 1,
+    "id": "chaosworld_core:source_white_dwarf_fragment_fluid"
+  },
+  "fluid_output_amount": 64000,
+  "item_inputs": [
+    {
+      "amount": 256,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_fragment_ingot"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "minecraft:blue_ice"
+      }
+    }
+  ],
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/white_dwarf_fluid",
+  "time": 120
+}

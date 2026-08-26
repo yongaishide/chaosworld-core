@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "chaosworld_core:graviton_plated_casing"
+    },
+    "E": {
+      "item": "ae2:dense_energy_cell"
+    },
+    "F": {
+      "item": "chaosworld_core:quantum_lattice_frame"
+    },
+    "P": {
+      "item": "chaosworld_core:white_dwarf_storage_component_1g"
+    },
+    "Q": {
+      "item": "chaosworld_core:neutronium_sphere"
+    }
+  },
+  "pattern": [
+    "PEP",
+    "FCF",
+    "PQP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:stellar_field_generator_t1"
+  }
+}

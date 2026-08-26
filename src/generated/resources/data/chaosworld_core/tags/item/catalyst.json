@@ -1,0 +1,17 @@
+{
+  "values": [
+    "chaosworld_core:chrono_catalyst_t1",
+    "chaosworld_core:chrono_catalyst_t2",
+    "chaosworld_core:chrono_catalyst_t3",
+    "chaosworld_core:matterflow_catalyst_t1",
+    "chaosworld_core:matterflow_catalyst_t2",
+    "chaosworld_core:matterflow_catalyst_t3",
+    "chaosworld_core:overflux_catalyst_t1",
+    "chaosworld_core:overflux_catalyst_t2",
+    "chaosworld_core:overflux_catalyst_t3",
+    "chaosworld_core:quantum_catalyst_t1",
+    "chaosworld_core:quantum_catalyst_t2",
+    "chaosworld_core:quantum_catalyst_t3",
+    "chaosworld_core:dimensional_catalyst"
+  ]
+}

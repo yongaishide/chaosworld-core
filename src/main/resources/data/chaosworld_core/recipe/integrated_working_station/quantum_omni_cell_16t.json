@@ -1,0 +1,26 @@
+{
+  "type": "neoecoae:integrated_working_station",
+  "energy": 144000,
+  "inputItems": [
+    {
+      "count": 1,
+      "item": "chaosworld_core:neutron_star_storage_component_16t"
+    },
+    {
+      "count": 8,
+      "item": "chaosworld_core:dimensional_processor"
+    },
+    {
+      "count": 64,
+      "item": "ae2:singularity"
+    },
+    {
+      "count": 1,
+      "item": "neoecoae:eco_quantum_omni_cell_housing"
+    }
+  ],
+  "itemOutput": {
+    "count": 1,
+    "id": "chaosworld_core:quantum_omni_cell_16t"
+  }
+}

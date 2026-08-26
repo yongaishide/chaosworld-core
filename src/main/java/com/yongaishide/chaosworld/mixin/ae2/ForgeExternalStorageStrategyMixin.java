@@ -29,8 +29,6 @@ public class ForgeExternalStorageStrategyMixin {
                     public MEStorage createWrapper(boolean extractableOnly, Runnable changeListener) {
                         return storage;
                     }
-
-                    private void onChange() {}
                 });
             }
         }

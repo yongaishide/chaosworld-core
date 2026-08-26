@@ -1,0 +1,8 @@
+{
+  "type": "ae2:storage_cell_disassembly",
+  "cell": "chaosworld_core:white_dwarf_cell_echo",
+  "cell_disassembly_items": [
+    {"id": "chaosworld_core:white_dwarf_cell_housing", "count": 1},
+    {"id": "chaosworld_core:white_dwarf_storage_component_1g", "count": 10}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "remove": [
+    "#chaosworld_core:needs_ufo_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_iron_tool",
+    "#minecraft:incorrect_for_diamond_tool"
+  ]
+}

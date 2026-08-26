@@ -1,0 +1,33 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 15000,
+  "fluid_inputs": [
+    {
+      "amount": 20,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "chaosworld_core:neutron_star_fragment_ingot"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "ae2:tiny_tnt"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:neutron_star_fragment_dust"
+    }
+  ],
+  "time": 80
+}

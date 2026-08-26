@@ -1,0 +1,29 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 256000000,
+  "fluid_inputs": [
+    {
+      "amount": 640000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:raw_star_matter_plasma"
+      }
+    }
+  ],
+  "fluid_output": {
+    "amount": 1,
+    "id": "chaosworld_core:transcending_matter"
+  },
+  "fluid_output_amount": 640000,
+  "item_inputs": [
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:unstable_white_hole_matter"
+      }
+    }
+  ],
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/transcending_matter_fluid",
+  "time": 1800
+}

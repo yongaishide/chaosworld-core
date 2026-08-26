@@ -1,0 +1,46 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 320000000,
+  "fluid_inputs": [
+    {
+      "amount": 128000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_white_dwarf_fragment_fluid"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:corporeal_matter"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:uu_matter_crystal"
+      }
+    },
+    {
+      "amount": 256,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_fragment_block"
+      }
+    }
+  ],
+  "item_output": {
+    "count": 64,
+    "id": "chaosworld_core:white_dwarf_matter"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/white_dwarf_matter_batch",
+  "time": 600
+}

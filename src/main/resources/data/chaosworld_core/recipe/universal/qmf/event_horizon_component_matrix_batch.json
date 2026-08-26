@@ -1,0 +1,46 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 480000000,
+  "fluid_inputs": [
+    {
+      "amount": 64000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_spatial_fluid"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 24,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_storage_component_16g"
+      }
+    },
+    {
+      "amount": 32,
+      "ingredient": {
+        "item": "chaosworld_core:pulsar_matter"
+      }
+    },
+    {
+      "amount": 256,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    },
+    {
+      "amount": 32,
+      "ingredient": {
+        "item": "chaosworld_core:quantum_anomaly"
+      }
+    }
+  ],
+  "item_output": {
+    "id": "chaosworld_core:white_dwarf_storage_component_64g"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/event_horizon_component_matrix_batch",
+  "required_tier": 2,
+  "time": 4800
+}

@@ -1,0 +1,46 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 1200000000,
+  "fluid_inputs": [
+    {
+      "amount": 128000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:transcending_matter"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 24,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_storage_component_64g"
+      }
+    },
+    {
+      "amount": 16,
+      "ingredient": {
+        "item": "chaosworld_core:dark_matter"
+      }
+    },
+    {
+      "amount": 16,
+      "ingredient": {
+        "item": "chaosworld_core:charged_enriched_neutronium_sphere"
+      }
+    },
+    {
+      "amount": 512,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    }
+  ],
+  "item_output": {
+    "id": "chaosworld_core:white_dwarf_storage_component_256g"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/cosmic_string_component_matrix_batch",
+  "required_tier": 2,
+  "time": 19200
+}

@@ -1,8 +1,15 @@
 {
   "required": true,
   "package": "com.yongaishide.chaosworld.mixin",
+  "plugin": "com.yongaishide.chaosworld.mixin.ChaosWorldMixinPlugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "MixinAppEngBase",
+    "MixinKeyTypeSelection",
+    "InvokerCraftingCPUCluster",
+    "WitherSkullBlockMixin",
+    "WitherBossMixin",
+    "FusionPlasmaItemMixin",
     "projectexpansion.TransmutationInterfaceItemHandlerMixin",
     "projectexpansion.TransmutationInterfaceMEStorageMixin",
     "ae2.ForgeExternalStorageStrategyMixin",
@@ -14,7 +21,18 @@
     "ae2.TickRatesMixin",
     "ae2.IOBusPartMixin",
     "ae2.IOPortBlockEntityMixin",
-    "ae2.TileExIOPortMixin"
+    "ae2.TileExIOPortMixin",
+    "neoecoae.ECOStorageSystemBlockEntityMixin",
+    "neoecoae.ECODriveBlockEntityMixin",
+    "neoecoae.StorageHostConsumptionRowMixin"
+  ],
+  "client": [
+    "MixinCPUSelectionList",
+    "MixinMEStorageScreen",
+    "MixinModelBakery",
+    "AccessorAbstractContainerScreen",
+    "AccessorBuiltInModelHooks",
+    "client.CreativeEnergyCellNameMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,0 +1,41 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 200000,
+  "fluid_inputs": [
+    {
+      "amount": 1200,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "chaosworld_core:neutron_star_fragment_ingot"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "minecraft:lodestone"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "minecraft:lightning_rod"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 2,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:pulsar_fragment_ingot"
+    }
+  ],
+  "time": 640
+}

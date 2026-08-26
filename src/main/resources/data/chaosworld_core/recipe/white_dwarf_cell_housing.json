@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "ae2:quartz_vibrant_glass"
+    },
+    "I": {
+      "item": "chaosworld_core:white_dwarf_fragment_ingot"
+    },
+    "R": {
+      "item": "chaosworld_core:white_dwarf_fragment_rod"
+    }
+  },
+  "pattern": [
+    "GRG",
+    "R R",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:white_dwarf_cell_housing"
+  }
+}

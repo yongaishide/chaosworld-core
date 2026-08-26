@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "chaosworld_core:white_dwarf_storage_component_4g"
+    },
+    "D": {
+      "item": "chaosworld_core:pulsar_matter"
+    },
+    "E": {
+      "item": "chaosworld_core:white_dwarf_storage_component_4g"
+    },
+    "L": {
+      "item": "chaosworld_core:dimensional_processor"
+    },
+    "S": {
+      "item": "chaosworld_core:entropy_singularity_casing"
+    }
+  },
+  "pattern": [
+    "SES",
+    "LCL",
+    "SDS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:me_massive_output_hatch"
+  }
+}

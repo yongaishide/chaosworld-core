@@ -88,6 +88,55 @@ config="${mod_id}.mixins.json"
     ordering="NONE"
     side="BOTH"
 
+[[dependencies.${mod_id}]]
+    modId="jade"
+    type="required"
+    ordering="AFTER"
+    side="BOTH"
+    versionRange="[15.10.6,)"
+
+[[dependencies.${mod_id}]]
+    modId="extendedae_plus"
+    type="required"
+    ordering="AFTER"
+    side="BOTH"
+    versionRange="[1.5.5,)"
+
+[[dependencies.${mod_id}]]
+    modId="ae2"
+    type="required"
+    ordering="AFTER"
+    side="BOTH"
+    versionRange="[19.2.17,19.3)"
+
+[[dependencies.${mod_id}]]
+    modId="thunderbolt"
+    type="required"
+    ordering="AFTER"
+    side="BOTH"
+    versionRange="[1.0.1,2.0.0)"
+
+[[dependencies.${mod_id}]]
+    modId="ae2lt"
+    type="required"
+    ordering="AFTER"
+    side="BOTH"
+    versionRange="[2.0.9,)"
+
+[[dependencies.${mod_id}]]
+    modId="neoecoae"
+    type="required"
+    ordering="AFTER"
+    side="BOTH"
+    versionRange="[21.2.0,)"
+
+[[dependencies.${mod_id}]]
+    modId="ae2omnicells"
+    type="required"
+    ordering="AFTER"
+    side="BOTH"
+    versionRange="[1.1.6,)"
+
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't
 # stop your mod loading on the server for example.

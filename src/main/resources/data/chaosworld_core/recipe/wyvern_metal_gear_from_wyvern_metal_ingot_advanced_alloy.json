@@ -1,0 +1,1 @@
+{"id":"chaosworld_core:advanced_alloy/gear/wyvern_metal_gear","ingredients":[{"count":1,"ingredient":{"item":"chaosworld_core:ingot_wyvern_metal"}}],"energy":1000,"process_time":40,"type":"useless_mod:advanced_alloy_furnace","outputs":[{"id":"chaosworld_core:gear_wyvern_metal"}],"mold":{"item":"useless_mod:metal_mold_gear"}}

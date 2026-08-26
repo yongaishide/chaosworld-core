@@ -1,0 +1,39 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 100000,
+  "fluid_inputs": [
+    {
+      "amount": 750,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_fragment_ingot"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:nether_star"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "chaosworld_core:obsidian_matrix"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 3,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:neutron_star_fragment_ingot"
+    }
+  ],
+  "time": 420
+}

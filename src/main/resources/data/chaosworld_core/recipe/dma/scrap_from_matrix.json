@@ -1,0 +1,33 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 100000,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "ingredient": {
+        "fluid": "minecraft:water"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "chaosworld_core:obsidian_matrix"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 4,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:scrap"
+    },
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "ae2:matter_ball"
+    }
+  ],
+  "time": 200
+}

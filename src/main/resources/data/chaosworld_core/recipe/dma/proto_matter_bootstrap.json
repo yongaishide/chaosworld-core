@@ -1,0 +1,47 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 10000000,
+  "fluid_inputs": [
+    {
+      "amount": 8000,
+      "ingredient": {
+        "fluid": "chaosworld_core:uu_matter"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "amount": 16,
+      "ingredient": {
+        "item": "chaosworld_core:neutron_star_fragment_ingot"
+      }
+    },
+    {
+      "amount": 8,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_fragment_ingot"
+      }
+    },
+    {
+      "amount": 8,
+      "ingredient": {
+        "item": "chaosworld_core:obsidian_matrix"
+      }
+    },
+    {
+      "amount": 8,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:proto_matter"
+    }
+  ],
+  "time": 1200
+}

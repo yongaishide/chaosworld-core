@@ -29,7 +29,10 @@ Chaos World Core 是 ChaosWorld 整合包的核心模组，注册了大量物品
 
 ## 许可
 
-本项目代码基于 MIT 许可证开源。
+本项目采用与 AE2 及其附属模组一致的双许可模式（详见 [LICENSE.md](LICENSE.md)）：
+
+- **源代码**：GNU LGPL v3.0 或更高版本（LGPLv3+）
+- **美术、纹理、模型、音效等素材**：Creative Commons Attribution-NonCommercial-ShareAlike 3.0（CC BY-NC-SA 3.0）
 
 ---
 
@@ -64,4 +67,7 @@ Provides **input hatch** (`wireless_flux_energy_input_hatch`) and **output hatch
 
 ## License
 
-This project is open source under the MIT License.
+This project follows the same dual-license model as AE2 and its addons (see [LICENSE.md](LICENSE.md)):
+
+- **Source code**: GNU LGPL v3.0 or later (LGPLv3+)
+- **Art, textures, models, sounds and other assets**: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 (CC BY-NC-SA 3.0)

@@ -1,0 +1,23 @@
+{
+  "values": [
+    "chaosworld_core:quantum_lattice_frame",
+    "chaosworld_core:graviton_plated_casing",
+    "chaosworld_core:white_dwarf_fragment_block",
+    "chaosworld_core:entropy_singularity_casing",
+    "chaosworld_core:quantum_entropy_casing",
+    "chaosworld_core:quantum_hyper_mechanical_casing",
+    "chaosworld_core:quantum_matter_fabricator_controller",
+    "chaosworld_core:quantum_slicer_controller",
+    "chaosworld_core:quantum_processing_factory_controller",
+    "chaosworld_core:quantum_cryoforge_controller",
+    "chaosworld_core:quantum_pattern_hatch",
+    "chaosworld_core:stellar_nexus_controller",
+    "chaosworld_core:stellar_field_generator_t1",
+    "chaosworld_core:stellar_field_generator_t2",
+    "chaosworld_core:stellar_field_generator_t3",
+    "chaosworld_core:me_massive_input_hatch",
+    "chaosworld_core:me_massive_output_hatch",
+    "chaosworld_core:me_massive_fluid_hatch",
+    "chaosworld_core:ae_energy_input_hatch"
+  ]
+}

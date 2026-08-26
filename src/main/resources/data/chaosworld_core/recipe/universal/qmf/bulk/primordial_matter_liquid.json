@@ -1,0 +1,29 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 192000000,
+  "fluid_inputs": [
+    {
+      "amount": 320000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:raw_star_matter_plasma"
+      }
+    }
+  ],
+  "fluid_output": {
+    "amount": 1,
+    "id": "chaosworld_core:source_primordial_matter_fluid"
+  },
+  "fluid_output_amount": 320000,
+  "item_inputs": [
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:quantum_anomaly"
+      }
+    }
+  ],
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/primordial_matter_liquid",
+  "time": 700
+}

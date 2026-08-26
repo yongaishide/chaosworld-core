@@ -1,0 +1,1 @@
+{"id":"chaosworld_core:advanced_alloy/plate/draconic_metal_plate","ingredients":[{"count":1,"ingredient":{"item":"chaosworld_core:ingot_draconic_metal"}}],"energy":1000,"process_time":40,"type":"useless_mod:advanced_alloy_furnace","outputs":[{"id":"chaosworld_core:plate_draconic_metal"}],"mold":{"item":"useless_mod:metal_mold_plate"}}

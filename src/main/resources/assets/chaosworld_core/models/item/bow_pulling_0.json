@@ -1,0 +1,6 @@
+{
+  "parent": "chaosworld_core:item/bow",
+  "textures": {
+    "layer0": "chaosworld_core:item/ufo_bow_1"
+  }
+}

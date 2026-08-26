@@ -1,0 +1,41 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 250000000,
+  "fluid_inputs": [
+    {
+      "amount": 4000,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "amount": 16,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_storage_component_1g"
+      }
+    },
+    {
+      "amount": 16,
+      "ingredient": {
+        "item": "ae2:dense_energy_cell"
+      }
+    },
+    {
+      "amount": 16,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:energy_cell"
+    }
+  ],
+  "time": 3600
+}

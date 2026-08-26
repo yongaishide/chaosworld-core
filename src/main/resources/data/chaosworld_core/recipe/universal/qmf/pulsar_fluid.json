@@ -1,0 +1,35 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 3000000,
+  "fluid_inputs": [
+    {
+      "amount": 2000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_output": {
+    "amount": 1,
+    "id": "chaosworld_core:source_pulsar_fragment_fluid"
+  },
+  "fluid_output_amount": 9000,
+  "item_inputs": [
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "chaosworld_core:pulsar_fragment_block"
+      }
+    },
+    {
+      "amount": 16,
+      "ingredient": {
+        "item": "minecraft:lightning_rod"
+      }
+    }
+  ],
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/pulsar_fluid",
+  "time": 600
+}

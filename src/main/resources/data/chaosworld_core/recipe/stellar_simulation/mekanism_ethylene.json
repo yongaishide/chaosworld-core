@@ -1,0 +1,88 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "chaosworld_core:stellar_simulation",
+  "coolant_amount": 2000000,
+  "cooling_level": 2,
+  "energy": 900000000,
+  "field_tier": 2,
+  "fluid_inputs": [
+    {
+      "amount": 800000,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "#": 1200000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_gelid_cryotheum"
+    },
+    {
+      "#": 1000000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_stable_coolant"
+    },
+    {
+      "#": 900000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_uu_amplifier_fluid"
+    },
+    {
+      "#": 750000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_liquid_starlight_fluid"
+    }
+  ],
+  "fuel_amount": 1500000,
+  "fuel_fluid": "mekanism:ethene",
+  "item_inputs": [
+    {
+      "amount": 4096,
+      "ingredient": {
+        "item": "mekanism:substrate"
+      }
+    },
+    {
+      "amount": 256,
+      "ingredient": {
+        "item": "chaosworld_core:obsidian_matrix"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 15000000,
+      "#t": "ae2:i",
+      "id": "mekanism:hdpe_sheet"
+    },
+    {
+      "#": 45000000,
+      "#t": "ae2:i",
+      "id": "mekanism:hdpe_pellet"
+    },
+    {
+      "#": 30000000,
+      "#t": "ae2:i",
+      "id": "mekanism:substrate"
+    },
+    {
+      "#": 6000000,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:dust_blizz"
+    },
+    {
+      "#": 3000000,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:dust_cryotheum"
+    }
+  ],
+  "simulation_name": "Ethylene Enrichment",
+  "time": 7200
+}

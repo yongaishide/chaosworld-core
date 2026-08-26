@@ -1,0 +1,134 @@
+{
+	"credit": "Made by PolygonMC",
+	"textures": {
+		"0": "chaosworld_core:item/ufoset/shield",
+		"1": "chaosworld_core:item/ufoset/animations/animations_shield",
+		"particle": "chaosworld_core:item/ufoset/shield"
+	},
+	"elements": [
+		{
+			"from": [2.5, 2.5, 7.5],
+			"to": [13.5, 13.5, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3.5, 3.5, 7.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 5.5, 5.5], "texture": "#0"},
+				"east": {"uv": [7.5, 8.5, 8, 14], "texture": "#0"},
+				"south": {"uv": [0, 5.5, 5.5, 11], "texture": "#0"},
+				"west": {"uv": [8, 8.5, 8.5, 14], "texture": "#0"},
+				"up": {"uv": [14, 4, 8.5, 3.5], "texture": "#0"},
+				"down": {"uv": [14, 4, 8.5, 4.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [3.5, 3.5, 7.4],
+			"to": [12.5, 12.5, 7.4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3.5, 3.5, 7.4]},
+			"faces": {
+				"north": {"uv": [0, 0, 9, 9], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 9], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 9], "texture": "#1"},
+				"up": {"uv": [9, 0, 0, 0], "texture": "#1"},
+				"down": {"uv": [9, 0, 0, 0], "texture": "#1"}
+			}
+		},
+		{
+			"from": [4.5, 4.5, 6.5],
+			"to": [11.5, 11.5, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3.5, 3.5, 6.5]},
+			"faces": {
+				"north": {"uv": [5.5, 0, 9, 3.5], "texture": "#0"},
+				"east": {"uv": [8.5, 8.5, 9, 12], "texture": "#0"},
+				"west": {"uv": [9, 0, 9.5, 3.5], "texture": "#0"},
+				"up": {"uv": [12, 5, 8.5, 4.5], "texture": "#0"},
+				"down": {"uv": [12, 5, 8.5, 5.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, 5, 4.5],
+			"to": [11, 11, 6.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3.5, 3.5, 6.5]},
+			"faces": {
+				"north": {"uv": [5.5, 3.5, 8.5, 6.5], "texture": "#0"},
+				"east": {"uv": [5.5, 6.5, 6.5, 9.5], "texture": "#0"},
+				"west": {"uv": [6.5, 6.5, 7.5, 9.5], "texture": "#0"},
+				"up": {"uv": [10.5, 7.5, 7.5, 6.5], "texture": "#0"},
+				"down": {"uv": [10.5, 7.5, 7.5, 8.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.5, 5.5, 10],
+			"to": [8.5, 10.5, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 5.5, 10]},
+			"faces": {
+				"north": {"uv": [9, 8.5, 9.5, 11], "texture": "#0"},
+				"east": {"uv": [9.5, 0, 10, 2.5], "texture": "#0"},
+				"south": {"uv": [5.5, 9.5, 6, 12], "texture": "#0"},
+				"west": {"uv": [6, 9.5, 6.5, 12], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.25, 10.5, 8.5],
+			"to": [8.75, 11, 11.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 6, 8.5]},
+			"faces": {
+				"east": {"uv": [8.5, 5.5, 10, 5.75], "texture": "#0"},
+				"south": {"uv": [10, 6, 10.75, 6.25], "texture": "#0"},
+				"west": {"uv": [8.5, 6, 10, 6.25], "texture": "#0"},
+				"up": {"uv": [7.25, 11, 6.5, 9.5], "texture": "#0"},
+				"down": {"uv": [10.25, 8.5, 9.5, 10], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.25, 5, 8.5],
+			"to": [8.75, 5.5, 11.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 0.5, 8.5]},
+			"faces": {
+				"east": {"uv": [8.5, 5.5, 10, 5.75], "texture": "#0"},
+				"south": {"uv": [10, 6, 10.75, 6.25], "texture": "#0"},
+				"west": {"uv": [8.5, 6, 10, 6.25], "texture": "#0"},
+				"up": {"uv": [7.25, 11, 6.5, 9.5], "texture": "#0"},
+				"down": {"uv": [10.25, 8.5, 9.5, 10], "texture": "#0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -72, 0],
+			"translation": [2.5, -2, 0.25]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -72, 0],
+			"translation": [2.5, -2, 0.25]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 0, -4.75],
+			"translation": [-0.5, 3.75, 0.75]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 0, -4.75],
+			"translation": [-0.5, 3.75, 0.75]
+		},
+		"ground": {
+			"rotation": [45, 0, 0],
+			"translation": [0, 3.75, 0]
+		},
+		"gui": {
+			"rotation": [0, 140, 0],
+			"scale": [1.34766, 1.34766, 1.34766]
+		},
+		"fixed": {
+			"translation": [0, 0, -3],
+			"scale": [2.5, 2.5, 2.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "shield",
+			"origin": [7.5, 0.5, 8.5],
+			"color": 0,
+			"boneType": "",
+			"children": [0, 1, 2, 3, 4, 5, 6]
+		}
+	]
+}

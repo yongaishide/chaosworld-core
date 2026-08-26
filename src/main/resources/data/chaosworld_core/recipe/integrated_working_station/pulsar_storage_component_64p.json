@@ -1,0 +1,26 @@
+{
+  "type": "neoecoae:integrated_working_station",
+  "energy": 192000000,
+  "inputFluid": {
+    "amount": 2000,
+    "fluid": "chaosworld_core:source_pulsar_fragment_fluid"
+  },
+  "inputItems": [
+    {
+      "count": 3,
+      "item": "chaosworld_core:pulsar_storage_component_16p"
+    },
+    {
+      "count": 64,
+      "item": "chaosworld_core:pulsar_matter"
+    },
+    {
+      "count": 32,
+      "item": "chaosworld_core:dimensional_processor"
+    }
+  ],
+  "itemOutput": {
+    "count": 1,
+    "id": "chaosworld_core:pulsar_storage_component_64p"
+  }
+}

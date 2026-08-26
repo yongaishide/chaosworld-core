@@ -1,0 +1,40 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 2560000,
+  "fluid_inputs": [
+    {
+      "amount": 6400,
+      "fluid": {
+        "amount": 1,
+        "id": "minecraft:water"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 128,
+      "ingredient": {
+        "item": "chaosworld_core:dust_blizz"
+      }
+    },
+    {
+      "amount": 128,
+      "ingredient": {
+        "item": "minecraft:redstone"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "minecraft:snowball"
+      }
+    }
+  ],
+  "item_output": {
+    "count": 128,
+    "id": "chaosworld_core:dust_cryotheum"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/dust_cryotheum",
+  "time": 60
+}

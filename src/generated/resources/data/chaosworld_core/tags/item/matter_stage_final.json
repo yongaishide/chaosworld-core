@@ -1,0 +1,8 @@
+{
+  "values": [
+    "chaosworld_core:dark_matter",
+    "chaosworld_core:pulsar_matter",
+    "chaosworld_core:white_dwarf_matter",
+    "chaosworld_core:neutron_star_matter"
+  ]
+}

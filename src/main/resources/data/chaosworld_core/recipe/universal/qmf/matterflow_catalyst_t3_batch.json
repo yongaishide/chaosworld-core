@@ -1,0 +1,40 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 180000000,
+  "fluid_inputs": [
+    {
+      "amount": 32000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:transcending_matter"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 32,
+      "ingredient": {
+        "item": "chaosworld_core:matterflow_catalyst_t2"
+      }
+    },
+    {
+      "amount": 32,
+      "ingredient": {
+        "item": "chaosworld_core:neutron_star_matter"
+      }
+    },
+    {
+      "amount": 128,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    }
+  ],
+  "item_output": {
+    "count": 16,
+    "id": "chaosworld_core:matterflow_catalyst_t3"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/matterflow_catalyst_t3_batch",
+  "time": 1200
+}

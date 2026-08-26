@@ -1,0 +1,26 @@
+{
+  "type": "neoecoae:integrated_working_station",
+  "energy": 144000,
+  "inputItems": [
+    {
+      "count": 1,
+      "item": "chaosworld_core:white_dwarf_storage_component_64g"
+    },
+    {
+      "count": 8,
+      "item": "ae2omnicells:multidimensional_expansion_processor"
+    },
+    {
+      "count": 64,
+      "item": "ae2:singularity"
+    },
+    {
+      "count": 1,
+      "item": "neoecoae:eco_quantum_omni_cell_housing"
+    }
+  ],
+  "itemOutput": {
+    "count": 1,
+    "id": "chaosworld_core:quantum_omni_cell_core"
+  }
+}

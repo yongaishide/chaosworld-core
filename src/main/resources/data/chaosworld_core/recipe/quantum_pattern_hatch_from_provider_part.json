@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chaosworld_core:quantum_pattern_provider_part"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:quantum_pattern_hatch"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "chaosworld_core:item/ufoset/fishing_rod",
+  "overrides": [
+    {
+      "predicate": {
+        "cast": 1
+      },
+      "model": "chaosworld_core:item/fishing_rod_cast"
+    }
+  ]
+}

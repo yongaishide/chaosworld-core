@@ -1,0 +1,42 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 50000000,
+  "fluid_inputs": [
+    {
+      "amount": 128000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_gelid_cryotheum"
+      }
+    }
+  ],
+  "fluid_output": {
+    "amount": 1,
+    "id": "chaosworld_core:source_stable_coolant"
+  },
+  "fluid_output_amount": 128000,
+  "item_inputs": [
+    {
+      "amount": 256,
+      "ingredient": {
+        "item": "minecraft:blue_ice"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:obsidian_matrix"
+      }
+    },
+    {
+      "amount": 16,
+      "ingredient": {
+        "item": "chaosworld_core:quantum_anomaly"
+      }
+    }
+  ],
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/stable_coolant_t3",
+  "required_tier": 3,
+  "time": 9600
+}

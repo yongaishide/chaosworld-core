@@ -1,0 +1,35 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 5000000,
+  "fluid_inputs": [
+    {
+      "amount": 4000,
+      "ingredient": {
+        "fluid": "chaosworld_core:uu_matter"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "chaosworld_core:enriched_neutronium_sphere"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:proto_matter"
+    }
+  ],
+  "time": 1200
+}

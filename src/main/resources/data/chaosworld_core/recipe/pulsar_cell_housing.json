@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "chaosworld_core:pulsar_fragment_dust"
+    },
+    "G": {
+      "item": "ae2:quartz_vibrant_glass"
+    },
+    "I": {
+      "item": "chaosworld_core:pulsar_fragment_ingot"
+    }
+  },
+  "pattern": [
+    "GDG",
+    "D D",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:pulsar_cell_housing"
+  }
+}

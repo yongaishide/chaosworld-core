@@ -1,0 +1,47 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 300000,
+  "fluid_inputs": [
+    {
+      "amount": 2000,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_spatial_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "chaosworld_core:chrono_catalyst_t1"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "chaosworld_core:corporeal_matter"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "ae2:quartz_vibrant_glass"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:chrono_catalyst_t2"
+    }
+  ],
+  "time": 400
+}

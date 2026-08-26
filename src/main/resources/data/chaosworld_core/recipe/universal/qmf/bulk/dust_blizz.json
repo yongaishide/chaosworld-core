@@ -1,0 +1,34 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 1280000,
+  "fluid_inputs": [
+    {
+      "amount": 3200,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 256,
+      "ingredient": {
+        "item": "minecraft:snowball"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "minecraft:redstone"
+      }
+    }
+  ],
+  "item_output": {
+    "count": 256,
+    "id": "chaosworld_core:dust_blizz"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/dust_blizz",
+  "time": 80
+}

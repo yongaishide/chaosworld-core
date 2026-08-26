@@ -1,0 +1,28 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 1280000,
+  "fluid_inputs": [
+    {
+      "amount": 3200,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:neutron_star_fragment_ingot"
+      }
+    }
+  ],
+  "item_output": {
+    "count": 128,
+    "id": "chaosworld_core:neutron_star_fragment_rod"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/neutron_star_fragment_rod",
+  "time": 80
+}

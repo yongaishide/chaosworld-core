@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket",
+  "fluid": "chaosworld_core:source_white_dwarf_fragment_fluid",
+  "loader": "neoforge:fluid_container"
+}

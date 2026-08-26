@@ -13,6 +13,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class ModMetals {
     public static final Map<String, DeferredHolder<Item, ? extends Item>> METAL_ITEMS = new LinkedHashMap<>();
@@ -40,6 +41,8 @@ public class ModMetals {
         {"rod", "\u68D2"},
     };
 
+    public static final Set<String> NO_TINT_METALS = Set.of("chaotic_metal", "draconic_metal", "wyvern_metal");
+
     public static final Map<String, Integer> METAL_COLORS = new HashMap<>();
     static {
         METAL_COLORS.put("ice", 0xFF07e5f5);
@@ -56,10 +59,12 @@ public class ModMetals {
     public static int getColorForItem(String path) {
         if (path.endsWith("_block")) {
             String metal = path.substring(0, path.length() - 6);
+            if (NO_TINT_METALS.contains(metal)) return 0xFFFFFFFF;
             return METAL_COLORS.getOrDefault(metal, 0xFFFFFFFF);
         }
         for (String[] metal : METALS) {
             if (path.endsWith("_" + metal[0])) {
+                if (NO_TINT_METALS.contains(metal[0])) return 0xFFFFFFFF;
                 return METAL_COLORS.getOrDefault(metal[0], 0xFFFFFFFF);
             }
         }

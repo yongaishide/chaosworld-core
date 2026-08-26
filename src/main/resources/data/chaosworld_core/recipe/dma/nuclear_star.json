@@ -1,0 +1,38 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 25000000,
+  "fluid_inputs": [
+    {
+      "amount": 5000,
+      "ingredient": {
+        "fluid": "chaosworld_core:raw_star_matter_plasma"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_fragment_block"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "chaosworld_core:neutron_star_fragment_block"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "chaosworld_core:pulsar_fragment_block"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:nuclear_star"
+    }
+  ],
+  "time": 3000
+}

@@ -1,0 +1,100 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "advanced_ae"
+    }
+  ],
+  "type": "chaosworld_core:stellar_simulation",
+  "coolant_amount": 600000,
+  "cooling_level": 3,
+  "energy": 2400000000,
+  "field_tier": 3,
+  "fluid_inputs": [
+    {
+      "amount": 4500000,
+      "ingredient": {
+        "fluid": "chaosworld_core:raw_star_matter_plasma"
+      }
+    },
+    {
+      "amount": 2500000,
+      "ingredient": {
+        "fluid": "chaosworld_core:transcending_matter"
+      }
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "#": 2500000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_liquid_starlight_fluid"
+    },
+    {
+      "#": 1500000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:uu_matter"
+    },
+    {
+      "#": 750000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_spatial_fluid"
+    },
+    {
+      "#": 750000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_temporal_fluid"
+    }
+  ],
+  "fuel_amount": 450000,
+  "fuel_fluid": "chaosworld_core:raw_star_matter_plasma",
+  "item_inputs": [
+    {
+      "amount": 4096,
+      "ingredient": {
+        "item": "advanced_ae:quantum_infused_dust"
+      }
+    },
+    {
+      "amount": 1024,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    },
+    {
+      "amount": 512,
+      "ingredient": {
+        "item": "chaosworld_core:obsidian_matrix"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 18000000,
+      "#t": "ae2:i",
+      "id": "advanced_ae:quantum_alloy"
+    },
+    {
+      "#": 12000000,
+      "#t": "ae2:i",
+      "id": "advanced_ae:printed_quantum_processor"
+    },
+    {
+      "#": 6000000,
+      "#t": "ae2:i",
+      "id": "advanced_ae:quantum_processor"
+    },
+    {
+      "#": 1500000,
+      "#t": "ae2:i",
+      "id": "ae2:singularity"
+    },
+    {
+      "#": 3000000,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:dimensional_processor"
+    }
+  ],
+  "simulation_name": "Quantum Alloy Infusion",
+  "time": 9600
+}

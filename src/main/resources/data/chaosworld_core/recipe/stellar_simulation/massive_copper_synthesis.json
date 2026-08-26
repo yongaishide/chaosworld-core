@@ -1,0 +1,94 @@
+{
+  "type": "chaosworld_core:stellar_simulation",
+  "coolant_amount": 100000,
+  "cooling_level": 3,
+  "energy": 3200000000,
+  "field_tier": 3,
+  "fluid_inputs": [
+    {
+      "amount": 7800000,
+      "ingredient": {
+        "fluid": "chaosworld_core:raw_star_matter_plasma"
+      }
+    },
+    {
+      "amount": 1600000,
+      "ingredient": {
+        "fluid": "chaosworld_core:uu_matter"
+      }
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "#": 1750000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_liquid_starlight_fluid"
+    },
+    {
+      "#": 1250000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_uu_amplifier_fluid"
+    },
+    {
+      "#": 600000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_stable_coolant"
+    },
+    {
+      "#": 450000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:source_pulsar_fragment_fluid"
+    }
+  ],
+  "fuel_amount": 140000,
+  "fuel_fluid": "chaosworld_core:raw_star_matter_plasma",
+  "item_inputs": [
+    {
+      "amount": 160,
+      "ingredient": {
+        "item": "chaosworld_core:enriched_neutronium_sphere"
+      }
+    },
+    {
+      "amount": 768,
+      "ingredient": {
+        "item": "chaosworld_core:obsidian_matrix"
+      }
+    },
+    {
+      "amount": 24576,
+      "ingredient": {
+        "item": "ae2:matter_ball"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 15000000,
+      "#t": "ae2:i",
+      "id": "minecraft:copper_ingot"
+    },
+    {
+      "#": 5000000,
+      "#t": "ae2:i",
+      "id": "minecraft:redstone"
+    },
+    {
+      "#": 3500000,
+      "#t": "ae2:i",
+      "id": "minecraft:amethyst_shard"
+    },
+    {
+      "#": 4500000,
+      "#t": "ae2:i",
+      "id": "minecraft:glowstone_dust"
+    },
+    {
+      "#": 5000000,
+      "#t": "ae2:i",
+      "id": "minecraft:quartz"
+    }
+  ],
+  "simulation_name": "Massive Copper Synthesis",
+  "time": 7000
+}

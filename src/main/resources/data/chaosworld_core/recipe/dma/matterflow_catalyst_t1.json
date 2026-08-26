@@ -1,0 +1,46 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 100000,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "chaosworld_core:obsidian_matrix"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "chaosworld_core:proto_matter"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_fragment_dust"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "ae2:quartz_vibrant_glass"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:matterflow_catalyst_t1"
+    }
+  ],
+  "time": 200
+}

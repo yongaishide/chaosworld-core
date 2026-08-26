@@ -1,0 +1,1 @@
+{"id":"chaosworld_core:advanced_alloy/rod/tech_7_rod","ingredients":[{"count":1,"ingredient":{"item":"chaosworld_core:ingot_tech_7"}}],"energy":1000,"process_time":40,"type":"useless_mod:advanced_alloy_furnace","outputs":[{"id":"chaosworld_core:rod_tech_7"}],"mold":{"item":"useless_mod:metal_mold_rod"}}

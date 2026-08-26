@@ -1,0 +1,34 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 100000,
+  "fluid_inputs": [
+    {
+      "amount": 500,
+      "ingredient": {
+        "fluid": "chaosworld_core:uu_matter"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "chaosworld_core:obsidian_matrix"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:netherite_ingot"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:safe_containment_matter"
+    }
+  ],
+  "time": 200
+}

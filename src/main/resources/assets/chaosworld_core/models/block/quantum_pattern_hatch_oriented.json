@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "chaosworld_core:block/quantum_pattern_hatch",
+    "down": "chaosworld_core:block/quantum_pattern_hatch",
+    "up": "chaosworld_core:block/quantum_pattern_hatch",
+    "north": "chaosworld_core:block/quantum_pattern_hatch",
+    "south": "chaosworld_core:block/quantum_pattern_hatch",
+    "east": "chaosworld_core:block/quantum_pattern_hatch",
+    "west": "chaosworld_core:block/quantum_pattern_hatch"
+  }
+}

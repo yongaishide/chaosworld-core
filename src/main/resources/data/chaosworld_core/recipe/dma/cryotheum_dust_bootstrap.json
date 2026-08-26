@@ -1,0 +1,34 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 50000,
+  "fluid_inputs": [
+    {
+      "amount": 1000,
+      "ingredient": {
+        "fluid": "minecraft:water"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "chaosworld_core:dust_blizz"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:snowball"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 2,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:dust_cryotheum"
+    }
+  ],
+  "time": 80
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "chaosworld_core:me_massive_fluid_hatch"
+    },
+    "C": {
+      "item": "chaosworld_core:white_dwarf_storage_component_256g"
+    },
+    "D": {
+      "item": "chaosworld_core:dark_matter"
+    },
+    "E": {
+      "item": "chaosworld_core:white_dwarf_storage_component_64g"
+    },
+    "F": {
+      "item": "chaosworld_core:stellar_field_generator_t2"
+    },
+    "G": {
+      "item": "chaosworld_core:me_massive_output_hatch"
+    }
+  },
+  "pattern": [
+    "ECE",
+    "FGF",
+    "DAD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:stellar_field_generator_t3"
+  }
+}

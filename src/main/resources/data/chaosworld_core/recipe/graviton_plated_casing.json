@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "ae2:engineering_processor"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "M": {
+      "item": "chaosworld_core:obsidian_matrix"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "IDI",
+    "OMO",
+    "IDI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:graviton_plated_casing"
+  }
+}

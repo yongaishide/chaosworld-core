@@ -1,0 +1,64 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 100000000,
+  "fluid_inputs": [
+    {
+      "amount": 12000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "chaosworld_core:charged_enriched_neutronium_sphere"
+      }
+    },
+    {
+      "amount": 16,
+      "ingredient": {
+        "item": "chaosworld_core:quantum_anomaly"
+      }
+    },
+    {
+      "amount": 16,
+      "ingredient": {
+        "item": "chaosworld_core:proto_matter"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "chaosworld_core:dark_matter"
+      }
+    },
+    {
+      "amount": 32,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    },
+    {
+      "amount": 16,
+      "ingredient": {
+        "item": "minecraft:netherite_ingot"
+      }
+    },
+    {
+      "amount": 256,
+      "ingredient": {
+        "item": "ae2:matter_ball"
+      }
+    }
+  ],
+  "item_output": {
+    "id": "chaosworld_core:staff"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/staff",
+  "required_tier": 3,
+  "time": 12000
+}

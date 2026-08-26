@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "chaosworld_core:graviton_plated_casing"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "M": {
+      "item": "ae2:controller"
+    },
+    "O": {
+      "item": "chaosworld_core:obsidian_matrix"
+    },
+    "P": {
+      "item": "ae2:engineering_processor"
+    }
+  },
+  "pattern": [
+    "OPO",
+    "CMC",
+    "OEO"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:dimensional_matter_assembler"
+  }
+}

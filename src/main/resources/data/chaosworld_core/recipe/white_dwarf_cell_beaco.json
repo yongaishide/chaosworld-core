@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "chaosworld_core:white_dwarf_cell_housing"
+    },
+    {
+      "item": "chaosworld_core:white_dwarf_storage_component_4g", "count": 10
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chaosworld_core:white_dwarf_cell_beaco"
+  }
+}

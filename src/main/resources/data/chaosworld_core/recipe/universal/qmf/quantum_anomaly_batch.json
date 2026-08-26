@@ -1,0 +1,40 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 120000000,
+  "fluid_inputs": [
+    {
+      "amount": 64000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_pulsar_fragment_fluid"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 512,
+      "ingredient": {
+        "item": "chaosworld_core:pulsar_fragment_dust"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:obsidian_matrix"
+      }
+    },
+    {
+      "amount": 64,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    }
+  ],
+  "item_output": {
+    "count": 64,
+    "id": "chaosworld_core:quantum_anomaly"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/quantum_anomaly_batch",
+  "time": 1200
+}

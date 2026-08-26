@@ -1,0 +1,70 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 1200000000,
+  "fluid_inputs": [
+    {
+      "amount": 56000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:transcending_matter"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 1,
+      "ingredient": {
+        "item": "chaosworld_core:thermal_resistor_pants"
+      }
+    },
+    {
+      "amount": 48,
+      "ingredient": {
+        "item": "chaosworld_core:enriched_neutronium_sphere"
+      }
+    },
+    {
+      "amount": 12,
+      "ingredient": {
+        "item": "chaosworld_core:quantum_anomaly"
+      }
+    },
+    {
+      "amount": 6,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_storage_component_64g"
+      }
+    },
+    {
+      "amount": 96,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    },
+    {
+      "amount": 12,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_fragment_block"
+      }
+    },
+    {
+      "amount": 6,
+      "ingredient": {
+        "item": "chaosworld_core:neutron_star_fragment_block"
+      }
+    },
+    {
+      "amount": 3,
+      "ingredient": {
+        "item": "chaosworld_core:pulsar_fragment_block"
+      }
+    }
+  ],
+  "item_output": {
+    "id": "chaosworld_core:leggings"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/leggings",
+  "required_tier": 2,
+  "time": 19000
+}

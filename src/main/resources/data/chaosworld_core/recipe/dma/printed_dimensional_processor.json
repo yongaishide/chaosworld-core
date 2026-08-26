@@ -1,0 +1,40 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 200000,
+  "fluid_inputs": [
+    {
+      "amount": 250,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [],
+  "item_inputs": [
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_fragment_ingot"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor_press"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "ae2:quartz_vibrant_glass"
+      }
+    }
+  ],
+  "item_outputs": [
+    {
+      "#": 1,
+      "#t": "ae2:i",
+      "id": "chaosworld_core:printed_dimensional_processor"
+    }
+  ],
+  "time": 240
+}

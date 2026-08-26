@@ -1,0 +1,46 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 5120000000,
+  "fluid_inputs": [
+    {
+      "amount": 1024000,
+      "fluid": {
+        "amount": 1,
+        "id": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 256,
+      "ingredient": {
+        "item": "chaosworld_core:enriched_neutronium_sphere"
+      }
+    },
+    {
+      "amount": 128,
+      "ingredient": {
+        "item": "chaosworld_core:nuclear_star"
+      }
+    },
+    {
+      "amount": 512,
+      "ingredient": {
+        "item": "chaosworld_core:pulsar_matter"
+      }
+    },
+    {
+      "amount": 1024,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    }
+  ],
+  "item_output": {
+    "count": 64,
+    "id": "chaosworld_core:charged_enriched_neutronium_sphere"
+  },
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/charged_enriched_neutronium_sphere",
+  "time": 12000
+}

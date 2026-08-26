@@ -1,0 +1,26 @@
+{
+  "type": "neoecoae:integrated_working_station",
+  "energy": 128000000,
+  "inputFluid": {
+    "amount": 2000,
+    "fluid": "chaosworld_core:source_neutron_star_fragment_fluid"
+  },
+  "inputItems": [
+    {
+      "count": 3,
+      "item": "chaosworld_core:neutron_star_storage_component_64t"
+    },
+    {
+      "count": 128,
+      "item": "chaosworld_core:neutron_star_matter"
+    },
+    {
+      "count": 64,
+      "item": "chaosworld_core:dimensional_processor"
+    }
+  ],
+  "itemOutput": {
+    "count": 1,
+    "id": "chaosworld_core:neutron_star_storage_component_256t"
+  }
+}

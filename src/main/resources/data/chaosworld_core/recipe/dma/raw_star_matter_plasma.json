@@ -1,0 +1,53 @@
+{
+  "type": "chaosworld_core:dimensional_assembly",
+  "energy": 2000000,
+  "fluid_inputs": [
+    {
+      "amount": 4000,
+      "ingredient": {
+        "fluid": "chaosworld_core:source_liquid_starlight_fluid"
+      }
+    }
+  ],
+  "fluid_outputs": [
+    {
+      "#": 10000,
+      "#t": "ae2:f",
+      "id": "chaosworld_core:raw_star_matter_plasma"
+    }
+  ],
+  "item_inputs": [
+    {
+      "amount": 8,
+      "ingredient": {
+        "item": "chaosworld_core:white_dwarf_fragment_ingot"
+      }
+    },
+    {
+      "amount": 4,
+      "ingredient": {
+        "item": "chaosworld_core:neutron_star_fragment_ingot"
+      }
+    },
+    {
+      "amount": 8,
+      "ingredient": {
+        "item": "chaosworld_core:pulsar_fragment_dust"
+      }
+    },
+    {
+      "amount": 2,
+      "ingredient": {
+        "item": "chaosworld_core:corporeal_matter"
+      }
+    },
+    {
+      "amount": 16,
+      "ingredient": {
+        "item": "chaosworld_core:dimensional_processor"
+      }
+    }
+  ],
+  "item_outputs": [],
+  "time": 1200
+}

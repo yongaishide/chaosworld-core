@@ -1,0 +1,1 @@
+{"mold":"immersiveengineering:mold_gear","energy":51200,"type":"immersiveengineering:metal_press","neoforge:conditions":[{"type":"neoforge:mod_loaded","modid":"immersiveengineering"}],"input":{"basePredicate":{"item":"chaosworld_core:ingot_quantum"},"count":4},"result":{"item":"chaosworld_core:gear_quantum"}}

@@ -1,0 +1,8 @@
+{
+  "type": "ae2:storage_cell_disassembly",
+  "cell": "chaosworld_core:neutron_star_cell_core",
+  "cell_disassembly_items": [
+    {"id": "chaosworld_core:neutron_star_cell_housing", "count": 1},
+    {"id": "chaosworld_core:neutron_star_storage_component_64t", "count": 10}
+  ]
+}

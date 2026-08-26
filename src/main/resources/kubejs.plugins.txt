@@ -1,0 +1,1 @@
+com.yongaishide.chaosworld.compat.kubejs.UfoKubeJSPlugin

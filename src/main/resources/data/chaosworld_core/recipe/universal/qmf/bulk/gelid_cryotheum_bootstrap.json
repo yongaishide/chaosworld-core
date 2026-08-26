@@ -1,0 +1,29 @@
+{
+  "type": "chaosworld_core:universal_multiblock",
+  "energy": 12800000,
+  "fluid_inputs": [
+    {
+      "amount": 64000,
+      "fluid": {
+        "amount": 1,
+        "id": "minecraft:water"
+      }
+    }
+  ],
+  "fluid_output": {
+    "amount": 1,
+    "id": "chaosworld_core:source_gelid_cryotheum"
+  },
+  "fluid_output_amount": 256000,
+  "item_inputs": [
+    {
+      "amount": 256,
+      "ingredient": {
+        "item": "chaosworld_core:dust_blizz"
+      }
+    }
+  ],
+  "machine": "qmf",
+  "recipe_name": "universal/qmf/bulk/gelid_cryotheum_bootstrap",
+  "time": 80
+}
