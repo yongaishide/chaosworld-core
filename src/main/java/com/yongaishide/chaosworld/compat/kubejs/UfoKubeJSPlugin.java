@@ -5,6 +5,7 @@ import appeng.api.stacks.AEItemKey;
 import appeng.api.stacks.GenericStack;
 import com.google.gson.JsonObject;
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import dev.latvian.mods.kubejs.plugin.KubeJSPlugin;
 import dev.latvian.mods.kubejs.recipe.KubeRecipe;
 import dev.latvian.mods.kubejs.recipe.RecipeScriptContext;
@@ -92,6 +93,51 @@ public class UfoKubeJSPlugin implements KubeJSPlugin {
             RecipeComponentType.unit(ResourceLocation.fromNamespaceAndPath("chaosworld_core", "stellar_fluid_output"),
                     type -> new SimpleRecipeComponent(type, FluidStack.CODEC, TypeInfo.of(FluidStack.class)));
 
+    // ──────────────────── codecs (DFU, used by KubeJS build.374+) ────────────────────
+    // Since KubeJS 2101.7.2-build.374 the RecipeComponent codec() drives JSON parse/serialize;
+    // readFromJson()/writeToJson() are no longer called. These codecs match the mod's native format.
+
+    private static Codec<ItemStack> singleItem() {
+        return Codec.STRING.xmap(
+                id -> new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.tryParse(id))),
+                stack -> stack.getItemHolder().unwrapKey()
+                        .map(key -> key.location().toString()).orElse("minecraft:air"));
+    }
+
+    private static Codec<FluidStack> singleFluid() {
+        return Codec.STRING.xmap(
+                id -> new FluidStack(BuiltInRegistries.FLUID.get(ResourceLocation.tryParse(id)), 1000),
+                stack -> stack.getFluid().builtInRegistryHolder().key().location().toString());
+    }
+
+    // item_inputs element: {"amount": n, "ingredient": {"item": id}}
+    private static final Codec<ItemStack> ITEM_INPUT_CODEC = RecordCodecBuilder.create(inst -> inst.group(
+            singleItem().fieldOf("ingredient").forGetter(stack -> stack.copyWithCount(1)),
+            Codec.INT.optionalFieldOf("amount", 1).forGetter(ItemStack::getCount)
+    ).apply(inst, (base, amount) -> base.copyWithCount(amount)));
+
+    // fluid_inputs element: {"amount": n, "ingredient": {"fluid": id}}
+    private static final Codec<FluidStack> FLUID_INPUT_CODEC = RecordCodecBuilder.create(inst -> inst.group(
+            singleFluid().fieldOf("ingredient").forGetter(stack -> new FluidStack(stack.getFluid(), 1000)),
+            Codec.INT.optionalFieldOf("amount", 1000).forGetter(FluidStack::getAmount)
+    ).apply(inst, (base, amount) -> new FluidStack(base.getFluid(), amount)));
+
+    // item_outputs element: {"id": id, "#t": "ae2:i", "#": count}
+    private static final Codec<ItemStack> ITEM_OUTPUT_CODEC = RecordCodecBuilder.create(inst -> inst.group(
+            Codec.STRING.fieldOf("id").forGetter(stack ->
+                    stack.getItemHolder().unwrapKey().map(key -> key.location().toString()).orElse("minecraft:air")),
+            Codec.LONG.optionalFieldOf("#", 1L).forGetter(stack -> (long) stack.getCount())
+    ).apply(inst, (id, amount) ->
+            new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.tryParse(id)), (int) (long) amount)));
+
+    // fluid_outputs element: {"id": id, "#t": "ae2:f", "#": amount}
+    private static final Codec<FluidStack> FLUID_OUTPUT_CODEC = RecordCodecBuilder.create(inst -> inst.group(
+            Codec.STRING.fieldOf("id").forGetter(stack ->
+                    stack.getFluid().builtInRegistryHolder().key().location().toString()),
+            Codec.LONG.optionalFieldOf("#", 1000L).forGetter(stack -> (long) stack.getAmount())
+    ).apply(inst, (id, amount) ->
+            new FluidStack(BuiltInRegistries.FLUID.get(ResourceLocation.tryParse(id)), (int) (long) amount)));
+
     public static final RecipeComponent<ItemStack> STELLAR_ITEM_INPUT = new RecipeComponent<>() {
         @Override
         public RecipeComponentType<?> type() {
@@ -100,7 +146,7 @@ public class UfoKubeJSPlugin implements KubeJSPlugin {
 
         @Override
         public Codec<ItemStack> codec() {
-            return ItemStack.OPTIONAL_CODEC;
+            return ITEM_INPUT_CODEC;
         }
 
         @Override
@@ -147,7 +193,7 @@ public class UfoKubeJSPlugin implements KubeJSPlugin {
 
         @Override
         public Codec<FluidStack> codec() {
-            return FluidStack.CODEC;
+            return FLUID_INPUT_CODEC;
         }
 
         @Override
@@ -193,7 +239,7 @@ public class UfoKubeJSPlugin implements KubeJSPlugin {
 
         @Override
         public Codec<ItemStack> codec() {
-            return ItemStack.OPTIONAL_CODEC;
+            return ITEM_OUTPUT_CODEC;
         }
 
         @Override
@@ -238,7 +284,7 @@ public class UfoKubeJSPlugin implements KubeJSPlugin {
 
         @Override
         public Codec<FluidStack> codec() {
-            return FluidStack.CODEC;
+            return FLUID_OUTPUT_CODEC;
         }
 
         @Override
