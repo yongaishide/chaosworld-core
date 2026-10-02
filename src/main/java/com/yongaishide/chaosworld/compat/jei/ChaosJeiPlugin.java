@@ -44,6 +44,15 @@ public class ChaosJeiPlugin implements IModPlugin {
         if (!removed.isEmpty()) {
             jeiRuntime.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK, removed);
         }
+
+        if (net.neoforged.fml.ModList.get().isLoaded("ae2lt")) {
+            try {
+                jeiRuntime.getRecipeManager().hideRecipeCategory(
+                        com.raishxn.ufo.compat.jei.MultiblockInfoCategory.RECIPE_TYPE);
+            } catch (Throwable ignored) {
+                // AE2LT/UFO API mismatch: keep the JEI runtime usable.
+            }
+        }
     }
 
     @Override
@@ -90,6 +99,16 @@ public class ChaosJeiPlugin implements IModPlugin {
                 List.copyOf(recipeManager.getAllRecipesFor(ModRecipes.FUSION_CONVERSION_TYPE.get()).stream()
                         .map(RecipeHolder::value)
                         .toList()));
+
+        if (net.neoforged.fml.ModList.get().isLoaded("ae2lt")) {
+            try {
+                registration.addRecipes(
+                        com.moakiee.ae2lt.integration.jei.category.MultiblockStructureCategory.TYPE,
+                        UfoMultiblockStructures.all());
+            } catch (Throwable ignored) {
+                // AE2LT API mismatch: keep the rest of the JEI pages working.
+            }
+        }
     }
 
     @Override
@@ -121,6 +140,17 @@ public class ChaosJeiPlugin implements IModPlugin {
                 ResourceLocation.fromNamespaceAndPath("mekanismgenerators", "fusion_reactor_controller"));
         if (fusionController != net.minecraft.world.item.Items.AIR) {
             registration.addRecipeCatalyst(new ItemStack(fusionController), FusionConversionRecipeCategory.RECIPE_TYPE);
+        }
+
+        if (net.neoforged.fml.ModList.get().isLoaded("ae2lt")) {
+            try {
+                for (var preview : com.raishxn.ufo.api.multiblock.MultiblockControllerDefinitions.getPreviewEntries()) {
+                    registration.addRecipeCatalyst(preview.iconStack(),
+                            com.moakiee.ae2lt.integration.jei.category.MultiblockStructureCategory.TYPE);
+                }
+            } catch (Throwable ignored) {
+                // AE2LT API mismatch: keep the rest of the JEI pages working.
+            }
         }
     }
 }

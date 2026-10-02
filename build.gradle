@@ -135,10 +135,10 @@ dependencies {
     // Local jars in libs/ (Flux Networks, MI, MoreFluxStorage, etc.)
     // The UFO Future jar is compile-time stubbed (access-widened) so the patch
     // layer can mix into its private members; the real jar is used at runtime only.
-    implementation fileTree(dir: 'libs', include: ['*.jar'], exclude: ['ufo-2.1-fix7.jar', 'ufo-3.0.0-beta.3.jar', 'raishxcore-0.1.0-beta.2.jar', 'ufo-stubs.jar'])
-    compileOnly files('libs/ufo-3.0.0-beta.3.jar')
+    implementation fileTree(dir: 'libs', include: ['*.jar'], exclude: ['ufo-2.1-fix7.jar', 'ufo-3.0.0-beta.3.jar', 'ufo-3.0.0-beta.4.jar', 'raishxcore-0.1.0-beta.2.jar', 'ufo-stubs.jar'])
+    compileOnly files('libs/ufo-3.0.0-beta.4.jar')
     compileOnly files('libs/raishxcore-0.1.0-beta.2.jar')
-    localRuntime files('libs/ufo-3.0.0-beta.3.jar')
+    localRuntime files('libs/ufo-3.0.0-beta.4.jar')
     localRuntime files('libs/raishxcore-0.1.0-beta.2.jar')
     compileOnly files('run/mods/ProjectE-1.21.1-PE1.1.0.jar')
     compileOnly files('run/mods/projectexpansion-1.21.1-1.0.6.jar')
@@ -166,6 +166,11 @@ compileOnly files('run/mods/ae2addonlib-1.0.3-1.21.1.jar')
     compileOnly files('run/mods/extendedae_plus-1.6.2.jar')
     compileOnly files('run/mods/twilightforest-1.21.1-4.8.3345-universal.jar')
     compileOnly files('run/mods/Re-Avaritia-neoforge-1.21.1-1.4.2-release.jar')
+    // FTB Quests integration (optional at runtime, guarded by ModList check)
+    compileOnly files('run/mods/ftb-quests-neoforge-2101.1.36.jar')
+    compileOnly files('run/mods/ftb-library-neoforge-2101.1.36.jar')
+    compileOnly files('run/mods/ftb-teams-neoforge-2101.1.9.jar')
+    compileOnly files('run/mods/architectury-neoforge-13.0.8.jar')
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

@@ -1,4 +1,21 @@
 {
+  "item.chaosworld_core.quest_detection_card": "Quest Detection Card",
+  "item.chaosworld_core.quest_detection_card.tooltip": "Install in a wireless terminal's upgrade slot so AE Resource quest tasks can count the linked ME network.",
+  "ftbquests.task.chaosworld_core.ae_resource": "Resource",
+  "chaosworld_core.resource.items": "Items",
+  "chaosworld_core.resource.inventory": "Inventory Items",
+  "chaosworld_core.resource.fluids": "Fluids",
+  "ftbquests.task.chaosworld_core.chemical": "Chemical",
+  "chaosworld_core.chemical.resource": "Chemical (click to choose)",
+  "chaosworld_core.chemical.amount": "Amount",
+  "chaosworld_core.chemical.search_mode": "Chemicals",
+  "chaosworld_core.chemical.any": "any chemical",
+  "chaosworld_core.ae_resource.key_type": "AE Key Type (e.g. data_energistics:digitalization, blank = any)",
+  "chaosworld_core.ae_resource.resource": "AE Resource (click to choose)",
+  "chaosworld_core.ae_resource.amount": "Amount",
+  "chaosworld_core.ae_resource.any": "any AE resource",
+  "chaosworld_core.ae_resource.none": "None",
+  "chaosworld_core.ae_resource.search_mode": "AE Resources",
   "creativetab.chaosworld.chaos_world": "Chaos World",
   "item.chaosworld_core.hammer": "[HAMMER]",
   "item.chaosworld_core.sword": "[SWORD]",
@@ -893,5 +910,8 @@
   "vein.size.planet": "Planet",
   "vein.size.star": "Star",
   "vein.size.nebula": "Nebula",
-  "vein.size.galaxy": "Galaxy"
+  "vein.size.galaxy": "Galaxy",
+  "block.ufo.quantum_processor_assembler_controller": "Quantum Processing Factory Controller",
+  "block.ufo.quantum_processing_factory_controller": "Quantum Processing Factory Controller",
+  "jei.chaosworld_core.lightning_cost": "Lightning: %s %s"
 }

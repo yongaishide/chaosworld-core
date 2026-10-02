@@ -1,11 +1,11 @@
 package com.yongaishide.chaosworld.mixin.ufo;
 
-import com.moakiee.ae2lt.registry.ModRecipeTypes;
 import com.raishxn.ufo.block.entity.QuantumProcessorAssemblerControllerBE;
 import com.raishxn.ufo.block.entity.processing.MultiblockProcessingRecipe;
 import com.raishxn.ufo.init.ModRecipes;
 import com.raishxn.ufo.recipe.UniversalMultiblockMachineKind;
-import com.yongaishide.chaosworld.patch.ufo.PatchRecipes;
+import com.raishxn.ufo.recipe.UniversalMultiblockRecipe;
+import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
@@ -14,9 +14,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Patch layer: the Quantum Processing Factory maps Lightning Tech overload
- * processing recipes scaled x20000 (UFO Future reset behaviour), and uses the
- * "quantum_processing_factory" display name.
+ * Patch layer: the Quantum Processing Factory uses the "quantum_processing_factory"
+ * display name and runs all {@code ufo:universal_multiblock} recipes registered for
+ * its machine kind. The AE2LT overload mapping is registered by the RecipeManager
+ * mixin as regular universal recipes, so no runtime-only entries are needed here.
  */
 @Mixin(value = QuantumProcessorAssemblerControllerBE.class, remap = false)
 public abstract class QuantumProcessorAssemblerControllerBEMixin {
@@ -34,22 +35,13 @@ public abstract class QuantumProcessorAssemblerControllerBEMixin {
         }
 
         List<MultiblockProcessingRecipe> recipes = new ArrayList<>();
-        var recipeManager = level.getRecipeManager();
-
-        for (var holder : recipeManager.getAllRecipesFor(ModRecipes.UNIVERSAL_MULTIBLOCK_TYPE.get())) {
-            var recipe = holder.value();
-            if (recipe.getMachine() == UniversalMultiblockMachineKind.QUANTUM_PROCESSOR_ASSEMBLER) {
+        for (RecipeHolder<?> holder : level.getRecipeManager()
+                .getAllRecipesFor(ModRecipes.UNIVERSAL_MULTIBLOCK_TYPE.get())) {
+            if (holder.value() instanceof UniversalMultiblockRecipe recipe
+                    && recipe.getMachine() == UniversalMultiblockMachineKind.QUANTUM_PROCESSOR_ASSEMBLER) {
                 recipes.add(MultiblockProcessingRecipe.fromUniversal(holder.id(), recipe));
             }
         }
-
-        for (var holder : recipeManager.getAllRecipesFor(ModRecipeTypes.OVERLOAD_PROCESSING_TYPE.get())) {
-            var recipe = holder.value();
-            if (!recipe.isIncomplete()) {
-                recipes.add(PatchRecipes.fromOverload(holder.id(), recipe));
-            }
-        }
-
         return recipes;
     }
 }

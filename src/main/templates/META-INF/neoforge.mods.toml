@@ -103,7 +103,7 @@ config="${mod_id}.mixins.json"
     type="required"
     ordering="AFTER"
     side="BOTH"
-    versionRange="[3.0.0-beta.3,)"
+    versionRange="[3.0.0-beta.4,)"
 
 [[dependencies.${mod_id}]]
     modId="raishxcore"
@@ -172,6 +172,13 @@ config="${mod_id}.mixins.json"
     type="optional"
     ordering="AFTER"
     side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="ftbquests"
+    type="optional"
+    ordering="AFTER"
+    side="BOTH"
+    versionRange="[2101.1.0,)"
 
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't

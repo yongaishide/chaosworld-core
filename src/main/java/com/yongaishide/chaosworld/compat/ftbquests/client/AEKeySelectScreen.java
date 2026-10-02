@@ -1,0 +1,28 @@
+package com.yongaishide.chaosworld.compat.ftbquests.client;
+
+import com.yongaishide.chaosworld.compat.ftbquests.AEKeyRef;
+import dev.ftb.mods.ftblibrary.config.ConfigCallback;
+import dev.ftb.mods.ftblibrary.config.ResourceConfigValue;
+import dev.ftb.mods.ftblibrary.config.ui.resource.ResourceSearchMode;
+import dev.ftb.mods.ftblibrary.config.ui.resource.SearchModeIndex;
+
+public class AEKeySelectScreen extends AbstractAEKeySelectScreen {
+    private static final SearchModeIndex<ResourceSearchMode<AEKeyRef>> MODES = new SearchModeIndex<>();
+
+    static {
+        MODES.appendMode(new AEItemSearchMode());
+        MODES.appendMode(new AEInventorySearchMode());
+        MODES.appendMode(new AEFluidSearchMode());
+        MODES.appendMode(new ChemicalSearchMode());
+        MODES.appendMode(new AEKeySearchMode());
+    }
+
+    public AEKeySelectScreen(ResourceConfigValue<AEKeyRef> config, ConfigCallback callback) {
+        super(config, callback);
+    }
+
+    @Override
+    protected SearchModeIndex<ResourceSearchMode<AEKeyRef>> getSearchModeIndex() {
+        return MODES;
+    }
+}

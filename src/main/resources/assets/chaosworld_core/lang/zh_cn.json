@@ -1,4 +1,21 @@
 {
+  "item.chaosworld_core.quest_detection_card": "任务检测卡",
+  "item.chaosworld_core.quest_detection_card.tooltip": "装入无线终端的升级槽后，AE 资源类任务才会统计该终端连接的 ME 网络。",
+  "ftbquests.task.chaosworld_core.ae_resource": "资源",
+  "chaosworld_core.resource.items": "物品",
+  "chaosworld_core.resource.inventory": "背包物品",
+  "chaosworld_core.resource.fluids": "流体",
+  "ftbquests.task.chaosworld_core.chemical": "化学品",
+  "chaosworld_core.chemical.resource": "化学品（点击选择）",
+  "chaosworld_core.chemical.amount": "数量",
+  "chaosworld_core.chemical.search_mode": "化学品",
+  "chaosworld_core.chemical.any": "任意化学品",
+  "chaosworld_core.ae_resource.key_type": "AE 键类型（例如 data_energistics:digitalization，留空表示任意类型）",
+  "chaosworld_core.ae_resource.resource": "AE 资源（点击选择）",
+  "chaosworld_core.ae_resource.amount": "数量",
+  "chaosworld_core.ae_resource.any": "任意 AE 资源",
+  "chaosworld_core.ae_resource.none": "无",
+  "chaosworld_core.ae_resource.search_mode": "AE 资源",
   "creativetab.chaosworld.chaos_world": "乱界",
   "item.chaosworld_core.hammer": "量子永恒重锤",
   "item.chaosworld_core.sword": "微观概念·量子永恒无尽杀生天地剑",
@@ -1336,5 +1353,6 @@
   "item.ufo.forgeplate": "锻造石板",
   "item.ufo.crystal_core_4": "§5四阶水晶核心",
   "item.ufo.mana_crystal1": "一级蕴魔结晶",
-  "block.ufo.ufo_energy_cell": "能量单元"
+  "block.ufo.ufo_energy_cell": "能量单元",
+  "jei.chaosworld_core.lightning_cost": "闪电消耗：%s %s"
 }

@@ -2,7 +2,10 @@ package com.yongaishide.chaosworld.mixin.ufo;
 
 import com.raishxn.ufo.block.entity.QuantumSlicerControllerBE;
 import com.raishxn.ufo.block.entity.processing.MultiblockProcessingRecipe;
-import com.yongaishide.chaosworld.patch.ufo.PatchRecipes;
+import com.raishxn.ufo.init.ModRecipes;
+import com.raishxn.ufo.recipe.UniversalMultiblockMachineKind;
+import com.raishxn.ufo.recipe.UniversalMultiblockRecipe;
+import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
@@ -11,8 +14,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Patch layer: the Quantum Slicer processes ExtendedAE Circuit Cutter recipes
- * scaled x64000 (UFO Future reset behaviour).
+ * Patch layer: the Quantum Slicer runs all {@code ufo:universal_multiblock} recipes
+ * registered for its machine kind. The ExtendedAE circuit cutter mapping is
+ * registered by the RecipeManager mixin as regular universal recipes.
  */
 @Mixin(value = QuantumSlicerControllerBE.class, remap = false)
 public abstract class QuantumSlicerControllerBEMixin {
@@ -25,14 +29,11 @@ public abstract class QuantumSlicerControllerBEMixin {
         }
 
         List<MultiblockProcessingRecipe> recipes = new ArrayList<>();
-        if (net.neoforged.fml.ModList.get().isLoaded("extendedae")) {
-            try {
-                for (var holder : level.getRecipeManager().getAllRecipesFor(
-                        com.glodblock.github.extendedae.recipe.CircuitCutterRecipe.TYPE)) {
-                    recipes.add(PatchRecipes.fromCircuitCutter(holder.id(), holder.value()));
-                }
-            } catch (Throwable ignored) {
-                // never break ticking on compat issues
+        for (RecipeHolder<?> holder : level.getRecipeManager()
+                .getAllRecipesFor(ModRecipes.UNIVERSAL_MULTIBLOCK_TYPE.get())) {
+            if (holder.value() instanceof UniversalMultiblockRecipe recipe
+                    && recipe.getMachine() == UniversalMultiblockMachineKind.QUANTUM_SLICER) {
+                recipes.add(MultiblockProcessingRecipe.fromUniversal(holder.id(), recipe));
             }
         }
         return recipes;

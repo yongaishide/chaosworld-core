@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " W ",
+    "ACA",
+    " W "
+  ],
+  "key": {
+    "W": { "item": "ae2:wireless_receiver" },
+    "A": { "item": "ae2:advanced_card" },
+    "C": { "item": "ae2:calculation_processor" }
+  },
+  "neoforge:conditions": [
+    { "type": "neoforge:mod_loaded", "modid": "ftbquests" }
+  ],
+  "result": {
+    "id": "chaosworld_core:quest_detection_card"
+  }
+}

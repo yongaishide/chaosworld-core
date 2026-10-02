@@ -33,7 +33,6 @@ public final class PatchRecipes {
     public static final int SLICER_PROCESSING_TICKS = 100 * 1000;
 
     public static final long OVERLOAD_QUANTITY_MULTIPLIER = 20_000L;
-    public static final long OVERLOAD_ENERGY_MULTIPLIER = 1000L;
     public static final int OVERLOAD_PROCESSING_TICKS = 1600;
 
     public static MultiblockProcessingRecipe fromDma(ResourceLocation id, DimensionalMatterAssemblerRecipe recipe) {
@@ -76,22 +75,44 @@ public final class PatchRecipes {
 
     public static MultiblockProcessingRecipe fromCircuitCutter(ResourceLocation id,
             com.glodblock.github.extendedae.recipe.CircuitCutterRecipe recipe) {
-        List<MultiblockProcessingRecipe.ItemRequirement> itemInputs = new ArrayList<>();
+        return MultiblockProcessingRecipe.fromUniversal(id, universalFromCircuitCutter(id, recipe));
+    }
+
+    /** Registers the ExtendedAE circuit cutter mapping as a data-pack/JEI visible universal recipe. */
+    public static UniversalMultiblockRecipe universalFromCircuitCutter(ResourceLocation id,
+            com.glodblock.github.extendedae.recipe.CircuitCutterRecipe recipe) {
+        List<UniversalMultiblockRecipe.ItemRequirement> itemInputs = new ArrayList<>();
         com.glodblock.github.glodium.recipe.stack.IngredientStack.Item input = recipe.getInput();
         if (input != null && input.getIngredient() != null) {
-            itemInputs.add(new MultiblockProcessingRecipe.ItemRequirement(input.getIngredient(),
+            itemInputs.add(new UniversalMultiblockRecipe.ItemRequirement(input.getIngredient(),
                     Math.max(1L, input.getAmount()) * SLICER_QUANTITY_MULTIPLIER));
         }
         ItemStack output = recipe.output;
-        List<MultiblockProcessingRecipe.OutputStack> outputs = List.of(
-                new MultiblockProcessingRecipe.OutputStack(normalizeItem(output), FluidStack.EMPTY,
-                        Math.max(1L, output.getCount()) * SLICER_QUANTITY_MULTIPLIER));
-        return new MultiblockProcessingRecipe(id, id.getPath(), itemInputs, List.of(), List.of(), outputs,
-                50_000L * SLICER_QUANTITY_MULTIPLIER, SLICER_PROCESSING_TICKS, 1);
+        return new UniversalMultiblockRecipe(
+                UniversalMultiblockMachineKind.QUANTUM_SLICER,
+                id.getPath(),
+                itemInputs,
+                List.of(),
+                List.of(),
+                normalizeItem(output),
+                Math.max(1L, output.getCount()) * SLICER_QUANTITY_MULTIPLIER,
+                FluidStack.EMPTY,
+                0L,
+                50_000L * SLICER_QUANTITY_MULTIPLIER,
+                SLICER_PROCESSING_TICKS,
+                1);
     }
 
     public static MultiblockProcessingRecipe fromOverload(ResourceLocation id,
             com.moakiee.ae2lt.machine.overloadfactory.recipe.OverloadProcessingRecipe recipe) {
+        return MultiblockProcessingRecipe.fromUniversal(id, universalFromOverload(id, recipe));
+    }
+
+    /** Registers the AE2LT overload mapping as a data-pack/JEI visible universal recipe. */
+    public static UniversalMultiblockRecipe universalFromOverload(ResourceLocation id,
+            com.moakiee.ae2lt.machine.overloadfactory.recipe.OverloadProcessingRecipe recipe) {
+        OverloadLightningRequirements.record(id, recipe.lightningTier(), recipe.lightningCost());
+
         List<UniversalMultiblockRecipe.ItemRequirement> itemInputs = recipe.itemInputs().stream()
                 .map(input -> new UniversalMultiblockRecipe.ItemRequirement(input.ingredient(),
                         input.count() * OVERLOAD_QUANTITY_MULTIPLIER))
@@ -125,20 +146,17 @@ public final class PatchRecipes {
                 itemOutputAmount,
                 fluidOutput,
                 fluidOutputAmount,
-                recipe.totalEnergy() * OVERLOAD_ENERGY_MULTIPLIER,
+                recipe.totalEnergy(),
                 OVERLOAD_PROCESSING_TICKS,
-                tierForLightningCost(recipe.lightningCost()));
-        return MultiblockProcessingRecipe.fromUniversal(id, universal);
+                tierForLightning(recipe.lightningTier()));
+        return universal;
     }
 
-    private static int tierForLightningCost(int lightningCost) {
-        if (lightningCost >= 65) {
-            return MultiblockMachineTier.MK3.level();
-        }
-        if (lightningCost >= 9) {
-            return MultiblockMachineTier.MK2.level();
-        }
-        return MultiblockMachineTier.MK1.level();
+    /** MK tier follows the lightning type: high voltage -&gt; MK1, extreme high voltage -&gt; MK2. */
+    private static int tierForLightning(com.moakiee.ae2lt.me.key.LightningKey.Tier tier) {
+        return tier == com.moakiee.ae2lt.me.key.LightningKey.Tier.EXTREME_HIGH_VOLTAGE
+                ? MultiblockMachineTier.MK2.level()
+                : MultiblockMachineTier.MK1.level();
     }
 
     private static ItemStack normalizeItem(ItemStack stack) {

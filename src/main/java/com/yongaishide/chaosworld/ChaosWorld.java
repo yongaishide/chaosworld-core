@@ -134,6 +134,12 @@ public class ChaosWorld {
         ModMetals.register();
         ModTech.register();
 
+        com.yongaishide.chaosworld.compat.MixinConflictFix.apply();
+
+        if (net.neoforged.fml.ModList.get().isLoaded("ftbquests")) {
+            com.yongaishide.chaosworld.compat.ftbquests.FTBQuestsIntegration.init();
+        }
+
         ModCreativeModeTabs.register(modEventBus);
         ModCellItems.register(modEventBus);
         ModRecipes.register(modEventBus);
@@ -161,12 +167,17 @@ public class ChaosWorld {
     private void commonSetup(FMLCommonSetupEvent event) {
         LOGGER.info("HELLO FROM COMMON SETUP");
         event.enqueueWork(UFORegistryHandler.INSTANCE::onInit);
+        event.enqueueWork(com.yongaishide.chaosworld.compat.MixinConflictFix::apply);
+        if (net.neoforged.fml.ModList.get().isLoaded("ftbquests")) {
+            event.enqueueWork(com.yongaishide.chaosworld.compat.ftbquests.FTBQuestsIntegration::setup);
+        }
     }
 
     @EventBusSubscriber(modid = MODID, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            event.enqueueWork(com.yongaishide.chaosworld.compat.MixinConflictFix::apply);
             event.enqueueWork(() -> {
                 var window = Minecraft.getInstance().getWindow().getWindow();
                 org.lwjgl.glfw.GLFW.glfwSetWindowCloseCallback(window, handle -> {
@@ -180,6 +191,11 @@ public class ChaosWorld {
             int c = ModMetals.getColorForItem(path);
             if (c != 0xFFFFFFFF) return c;
             return ModTech.getColorForItem(path);
+        }
+
+        @SubscribeEvent
+        public static void onClientTick(net.neoforged.neoforge.client.event.ClientTickEvent.Post event) {
+            com.yongaishide.chaosworld.compat.MixinConflictFix.apply();
         }
 
         @SubscribeEvent

@@ -4,6 +4,7 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 import java.util.Optional;
 
 import appeng.api.config.FuzzyMode;
@@ -15,7 +16,9 @@ import appeng.api.storage.cells.ICellWorkbenchItem;
 import appeng.api.upgrades.IUpgradeInventory;
 import appeng.api.upgrades.UpgradeInventories;
 import appeng.core.AEConfig;
+import appeng.core.localization.GuiText;
 import appeng.core.localization.PlayerMessages;
+import appeng.core.localization.Tooltips;
 import appeng.items.contents.CellConfig;
 import appeng.items.storage.StorageCellTooltipComponent;
 import appeng.items.storage.StorageTier;
@@ -27,6 +30,7 @@ import com.raishxn.ufo.item.custom.cell.AEUniversalTooltips;
 import com.raishxn.ufo.item.custom.cell.IAEBigIntegerCell;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
@@ -76,15 +80,39 @@ public class ChaosBigCellItem extends Item implements IAEBigIntegerCell, ICellWo
                 .append(Component.translatable(baseNameKey).withStyle(color));
     }
 
+    private static final long C_K = 1024L;
+    private static final long C_M = C_K * 1024L;
+    private static final long C_G = C_M * 1024L;
+    private static final long C_T = C_G * 1024L;
+    private static final long C_P = C_T * 1024L;
+    private static final long C_E = C_P * 1024L;
+
     @org.spongepowered.asm.mixin.Unique
     private static String chaosworld$formatHumanReadable(long value) {
-        if (value >= 1_000_000_000_000_000_000L) return (value / 1_000_000_000_000_000_000L) + "E";
-        if (value >= 1_000_000_000_000_000L) return (value / 1_000_000_000_000_000L) + "P";
-        if (value >= 1_000_000_000_000L) return (value / 1_000_000_000_000L) + "T";
-        if (value >= 1_000_000_000L) return (value / 1_000_000_000L) + "G";
-        if (value >= 1_000_000L) return (value / 1_000_000L) + "M";
-        if (value >= 1_000L) return (value / 1_000L) + "K";
-        return Long.toString(value);
+        if (value < 0) return "∞";
+        if (value < C_K) return Long.toString(value);
+        if (value < C_M) return chaosworld$formatUnit(value, C_K, "K");
+        if (value < C_G) return chaosworld$formatUnit(value, C_M, "M");
+        if (value < C_T) return chaosworld$formatUnit(value, C_G, "G");
+        if (value < C_P) return chaosworld$formatUnit(value, C_T, "T");
+        if (value < C_E) return chaosworld$formatUnit(value, C_P, "P");
+        return chaosworld$formatUnit(value, C_E, "E");
+    }
+
+    private static String chaosworld$formatUnit(long value, long unit, String suffix) {
+        double scaled = (double) value / (double) unit;
+        if (scaled == Math.floor(scaled)) {
+            return (long) scaled + suffix;
+        }
+        return String.format(Locale.ROOT, "%.1f%s", scaled, suffix);
+    }
+
+    private static String chaosworld$formatHumanReadable(BigInteger value) {
+        if (value.signum() < 0) return "∞";
+        if (value.bitLength() <= 63) {
+            return chaosworld$formatHumanReadable(value.longValue());
+        }
+        return value.divide(BigInteger.valueOf(C_E)) + "E";
     }
 
     @Override
@@ -92,10 +120,30 @@ public class ChaosBigCellItem extends Item implements IAEBigIntegerCell, ICellWo
             @NotNull List<Component> lines, @NotNull TooltipFlag tooltipFlag) {
         if (Platform.isClient()) {
             BigInteger used = IAEBigIntegerCell.getUsedBytes(stack);
-            lines.add(AEUniversalTooltips.bytesUsed(used, maxBytes));
+            lines.add(chaosworld$bytesUsed(used, maxBytes));
             long typesUsed = IAEBigIntegerCell.getUsedTypes(stack);
-            lines.add(AEUniversalTooltips.typesUsed(typesUsed, Integer.MAX_VALUE));
+            lines.add(AEUniversalTooltips.typesUsed(typesUsed, -1));
         }
+    }
+
+    private static Component chaosworld$bytesUsed(BigInteger used, long max) {
+        double ratio = max > 0 ? used.doubleValue() / (double) max : 1.0;
+        if (ratio > 1.0) {
+            ratio = 1.0;
+        }
+
+        MutableComponent usedComp = Component.literal(chaosworld$formatHumanReadable(used))
+                .withStyle(Tooltips.colorFromRatio(ratio, false));
+        MutableComponent maxComp = Component.literal(max <= 0 ? "∞" : chaosworld$formatHumanReadable(max))
+                .withStyle(ChatFormatting.GRAY);
+
+        return Tooltips.of(GuiText.BytesUsed,
+                Tooltips.of(
+                        usedComp,
+                        Tooltips.of(" "),
+                        Tooltips.of(GuiText.Of),
+                        Tooltips.of(" "),
+                        maxComp));
     }
 
     @Override

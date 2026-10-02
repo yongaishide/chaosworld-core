@@ -27,18 +27,26 @@
     "neoecoae.ECODriveBlockEntityMixin",
     "twilightforest.BossRewardChestMixin",
     "twilightforest.IBossLootBufferMixin",
+    "ufo.AEBigIntegerCellHandlerMixin",
+    "ufo.AEBigIntegerCellItemMixin",
     "ufo.BaseCatalystItemMixin",
     "ufo.QmfControllerBEMixin",
     "ufo.QuantumSlicerControllerBEMixin",
     "ufo.QuantumProcessorAssemblerControllerBEMixin",
+    "ufo.QuantumProcessorLightningMixin",
     "ufo.QuantumPatternPredicatesMixin",
     "ufo.QuantumPatternHatchMenuMixin"
   ],
   "client": [
     "client.CreativeEnergyCellNameMixin",
+    "ftbquests.AddTaskButtonMixin",
+    "ftbquests.CountTextBoxMixin",
+    "ftbquests.QuestPanelMixin",
+    "ftbquests.ResourceSelectorScreenAccessor",
     "ufo.client.QuantumPatternHatchScreenMixin",
     "ufo.client.GhostHologramRendererMixin",
-    "ufo.client.ModTooltipEventHandlerMixin"
+    "ufo.client.ModTooltipEventHandlerMixin",
+    "ufo.client.UniversalMultiblockLightningJeiMixin"
   ],
   "injectors": {
     "defaultRequire": 1

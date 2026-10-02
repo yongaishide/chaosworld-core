@@ -1,7 +1,6 @@
 package com.yongaishide.chaosworld.patch.contents;
 
 import com.raishxn.ufo.item.custom.AnimatedNameItem;
-import appeng.api.stacks.AEKeyType;
 import com.yongaishide.chaosworld.ChaosWorld;
 import net.minecraft.ChatFormatting;
 import net.minecraft.world.item.Item;
@@ -110,7 +109,7 @@ public final class LegacyTieredContent {
     private static DeferredHolder<Item, ChaosBigCellItem> cell(String id, double idleDrain, long maxBytes,
             String baseNameKey, String tierNameKey, ChatFormatting[] baseColors, ChatFormatting... tierColors) {
         return ITEMS.register(id,
-                () -> new ChaosBigCellItem(new Item.Properties().stacksTo(1), idleDrain, AEKeyType.items(), maxBytes,
+                () -> new ChaosBigCellItem(new Item.Properties().stacksTo(1), idleDrain, null, maxBytes,
                         baseNameKey, tierNameKey, baseColors, tierColors));
     }
 

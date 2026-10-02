@@ -178,6 +178,11 @@ public class ModCreativeModeTabs {
                         output.accept(ChaosWorld.TWILIGHT_CATALYST.get());
                         output.accept(ChaosWorld.INFINITE_RUNES.get());
                         output.accept(ChaosWorld.RUNES_1.get());
+
+                        // FTB Quests 任务检测卡
+                        if (net.neoforged.fml.ModList.get().isLoaded("ftbquests")) {
+                            output.accept(com.yongaishide.chaosworld.compat.ftbquests.FTBQuestsIntegration.QUEST_DETECTION_CARD.get());
+                        }
                     }).build());
 
     public static void register(IEventBus eventBus) {
