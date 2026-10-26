@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "chaosworld_core:item/white_dwarf_cell_housing"
-  }
-}

@@ -1,7 +1,7 @@
 package com.yongaishide.chaosworld.compat.ftbquests;
 
+import appeng.api.upgrades.IUpgradeableItem;
 import appeng.api.upgrades.Upgrades;
-import appeng.items.tools.powered.WirelessTerminalItem;
 import com.yongaishide.chaosworld.ChaosWorld;
 import com.yongaishide.chaosworld.compat.ftbquests.client.AEKeyConfig;
 import com.yongaishide.chaosworld.compat.ftbquests.client.AEKeySelectScreen;
@@ -55,7 +55,7 @@ public final class FTBQuestsIntegration {
                     AEResourceTask task = new AEResourceTask(0L, quest);
                     AEKeyRef ref = config.getValue();
                     if (ref != null) {
-                        task.setResource(ref.keyType(), ref.resource());
+                        task.setResource(ref.keyType(), ref.resource(), ref.components());
                     }
                     task.setAmount(config.getAmount());
                     callback.accept(task);
@@ -81,7 +81,8 @@ public final class FTBQuestsIntegration {
     public static void setup() {
         Item card = QUEST_DETECTION_CARD.get();
         for (Item item : BuiltInRegistries.ITEM) {
-            if (item instanceof WirelessTerminalItem) {
+            // 只要物品能装升级、且能链接 ME 网络（AE2 无线终端及其附属模组的各类终端），就允许装检测卡。
+            if (item instanceof IUpgradeableItem && AENetworkScan.isGridLinkable(item.getClass())) {
                 Upgrades.add(card, item, 1);
             }
         }
@@ -89,7 +90,7 @@ public final class FTBQuestsIntegration {
 
     public static boolean hasDetectionCard(ItemStack terminalStack) {
         return QUEST_DETECTION_CARD != null
-                && terminalStack.getItem() instanceof WirelessTerminalItem terminal
-                && terminal.getUpgrades(terminalStack).getInstalledUpgrades(QUEST_DETECTION_CARD.get()) > 0;
+                && terminalStack.getItem() instanceof IUpgradeableItem upgradeable
+                && upgradeable.getUpgrades(terminalStack).getInstalledUpgrades(QUEST_DETECTION_CARD.get()) > 0;
     }
 }

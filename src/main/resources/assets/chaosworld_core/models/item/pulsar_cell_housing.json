@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "chaosworld_core:item/pulsar_cell_housing"
-  }
-}

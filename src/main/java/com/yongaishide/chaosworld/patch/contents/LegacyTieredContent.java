@@ -11,8 +11,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 /**
  * Patch layer: re-adds the Chaos World storage tier content that UFO Future 2.1
  * does not have (white dwarf / neutron star / pulsar storage components and the
- * legacy neutron star / pulsar storage cells), so the original editable recipes
- * keep working with this mod's own item ids.
+ * legacy white dwarf / neutron star / pulsar storage cells), so the original
+ * editable recipes keep working with this mod's own item ids.
  */
 public final class LegacyTieredContent {
 
@@ -63,15 +63,21 @@ public final class LegacyTieredContent {
             component("pulsar_storage_component_256p", ChatFormatting.WHITE, ChatFormatting.GREEN, ChatFormatting.DARK_GREEN);
 
     // ------------------------------------------------------------------
-    // cell housings
+    // white dwarf storage cells (UFO white dwarf housing + this mod's 1G..256G components)
     // ------------------------------------------------------------------
 
-    public static final DeferredHolder<Item, AnimatedNameItem> WHITE_DWARF_CELL_HOUSING =
-            component("white_dwarf_cell_housing", ChatFormatting.WHITE, ChatFormatting.GRAY, ChatFormatting.DARK_GRAY);
-    public static final DeferredHolder<Item, AnimatedNameItem> NEUTRON_STAR_CELL_HOUSING =
-            component("neutron_star_cell_housing", ChatFormatting.BLUE, ChatFormatting.AQUA, ChatFormatting.DARK_AQUA);
-    public static final DeferredHolder<Item, AnimatedNameItem> PULSAR_CELL_HOUSING =
-            component("pulsar_cell_housing", ChatFormatting.LIGHT_PURPLE, ChatFormatting.DARK_PURPLE);
+    private static final ChatFormatting[] WHITE_DWARF_COLORS = {ChatFormatting.WHITE, ChatFormatting.GRAY, ChatFormatting.DARK_GRAY};
+
+    public static final DeferredHolder<Item, ChaosBigCellItem> WHITE_DWARF_CELL_1G =
+            cell("white_dwarf_cell_echo", 5.5D, BASE_256M * 4, "item.chaosworld_core.white_dwarf_cell", "chaosworld_core.cell_tier.echo", WHITE_DWARF_COLORS, ChatFormatting.RED, ChatFormatting.GOLD, ChatFormatting.RED);
+    public static final DeferredHolder<Item, ChaosBigCellItem> WHITE_DWARF_CELL_4G =
+            cell("white_dwarf_cell_beaco", 6.0D, BASE_256M * 16, "item.chaosworld_core.white_dwarf_cell", "chaosworld_core.cell_tier.beacon", WHITE_DWARF_COLORS, ChatFormatting.LIGHT_PURPLE, ChatFormatting.DARK_PURPLE);
+    public static final DeferredHolder<Item, ChaosBigCellItem> WHITE_DWARF_CELL_16G =
+            cell("white_dwarf_cell_nexus", 6.5D, BASE_256M * 64, "item.chaosworld_core.white_dwarf_cell", "chaosworld_core.cell_tier.nexus", WHITE_DWARF_COLORS, ChatFormatting.AQUA, ChatFormatting.DARK_AQUA);
+    public static final DeferredHolder<Item, ChaosBigCellItem> WHITE_DWARF_CELL_64G =
+            cell("white_dwarf_cell_core", 7.0D, BASE_256M * 256, "item.chaosworld_core.white_dwarf_cell", "chaosworld_core.cell_tier.core", WHITE_DWARF_COLORS, ChatFormatting.BLUE, ChatFormatting.DARK_PURPLE);
+    public static final DeferredHolder<Item, ChaosBigCellItem> WHITE_DWARF_CELL_256G =
+            cell("white_dwarf_cell_singularity", 7.5D, BASE_256M * 1024, "item.chaosworld_core.white_dwarf_cell", "chaosworld_core.cell_tier.singularity", WHITE_DWARF_COLORS, ChatFormatting.GREEN, ChatFormatting.DARK_GREEN);
 
     // ------------------------------------------------------------------
     // legacy neutron star / pulsar storage cells

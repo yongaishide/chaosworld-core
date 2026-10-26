@@ -39,8 +39,14 @@ public class UFORegistryHandler {
         ECOCellModels.register(ModCellItems.QUANTUM_OMNI_CELL_64P.get(), quantumOmniDriveModel);
         ECOCellModels.register(ModCellItems.QUANTUM_OMNI_CELL_256P.get(), quantumOmniDriveModel);
 
+        ResourceLocation whiteDwarfDriveModel = ResourceLocation.fromNamespaceAndPath("ufo", "drive/cells/white_dwarf_cell");
         ResourceLocation neutronDriveModel = ResourceLocation.fromNamespaceAndPath("ufo", "drive/cells/neutron_star_cell");
         ResourceLocation pulsarDriveModel = ResourceLocation.fromNamespaceAndPath("ufo", "drive/cells/pulsar_cell");
+        StorageCellModels.registerModel(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.WHITE_DWARF_CELL_1G.get(), whiteDwarfDriveModel);
+        StorageCellModels.registerModel(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.WHITE_DWARF_CELL_4G.get(), whiteDwarfDriveModel);
+        StorageCellModels.registerModel(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.WHITE_DWARF_CELL_16G.get(), whiteDwarfDriveModel);
+        StorageCellModels.registerModel(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.WHITE_DWARF_CELL_64G.get(), whiteDwarfDriveModel);
+        StorageCellModels.registerModel(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.WHITE_DWARF_CELL_256G.get(), whiteDwarfDriveModel);
         StorageCellModels.registerModel(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.NEUTRON_STAR_CELL_1T.get(), neutronDriveModel);
         StorageCellModels.registerModel(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.NEUTRON_STAR_CELL_4T.get(), neutronDriveModel);
         StorageCellModels.registerModel(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.NEUTRON_STAR_CELL_16T.get(), neutronDriveModel);

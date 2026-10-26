@@ -1,6 +1,7 @@
 package com.yongaishide.chaosworld.compat.jade;
 
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 
 import snownee.jade.api.IWailaClientRegistration;
 import snownee.jade.api.IWailaCommonRegistration;
@@ -23,6 +24,9 @@ public class ChaosWorldJadePlugin implements IWailaPlugin {
     public static final ResourceLocation QUANTUM_PATTERN_HATCH_CACHE =
             ResourceLocation.fromNamespaceAndPath("chaosworld_core", "quantum_pattern_hatch_cache");
 
+    public static final ResourceLocation MINING_LEVEL =
+            ResourceLocation.fromNamespaceAndPath("chaosworld_core", "mining_level");
+
     @Override
     public void register(IWailaCommonRegistration registration) {
         registration.registerBlockDataProvider(QuantumPatternHatchCacheProvider.INSTANCE, QuantumPatternHatchBE.class);
@@ -31,5 +35,6 @@ public class ChaosWorldJadePlugin implements IWailaPlugin {
     @Override
     public void registerClient(IWailaClientRegistration registration) {
         registration.registerBlockComponent(QuantumPatternHatchCacheProvider.INSTANCE, QuantumPatternHatchBlock.class);
+        registration.registerBlockComponent(MiningLevelProvider.INSTANCE, Block.class);
     }
 }

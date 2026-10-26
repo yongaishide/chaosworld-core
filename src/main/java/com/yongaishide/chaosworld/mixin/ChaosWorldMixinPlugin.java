@@ -28,6 +28,8 @@ public class ChaosWorldMixinPlugin implements IMixinConfigPlugin {
     private static final String TWILIGHT_MIXIN_PACKAGE = "com.yongaishide.chaosworld.mixin.twilightforest";
     private static final String PROJECTE_INTEGRATION_MIXIN_PACKAGE = "com.yongaishide.chaosworld.mixin.projecteintegration";
     private static final String FTBQUESTS_MIXIN_PACKAGE = "com.yongaishide.chaosworld.mixin.ftbquests";
+    private static final String BOTANIA_MIXIN_PACKAGE = "com.yongaishide.chaosworld.mixin.botania";
+    private static final String NEOECOAE_MIXIN_PACKAGE = "com.yongaishide.chaosworld.mixin.neoecoae";
 
     /**
      * Mixin plugins run before all mods have finished loading, so {@link ModList#isLoaded(String)}
@@ -63,6 +65,12 @@ public class ChaosWorldMixinPlugin implements IMixinConfigPlugin {
         }
         if (mixinClassName.startsWith(FTBQUESTS_MIXIN_PACKAGE)) {
             return isModLoaded("ftbquests");
+        }
+        if (mixinClassName.startsWith(BOTANIA_MIXIN_PACKAGE)) {
+            return isModLoaded("botania");
+        }
+        if (mixinClassName.startsWith(NEOECOAE_MIXIN_PACKAGE)) {
+            return isModLoaded("neoecoae");
         }
         return true;
     }

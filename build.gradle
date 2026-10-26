@@ -71,6 +71,21 @@ neoForge {
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+
+            // ---- 启动调优 ----------------------------------------------------------
+            // 堆：不设时 JVM 取物理内存的 1/4，47 个 mod 在资源重载 / JEI 建档阶段很容易被 GC 打断。
+            jvmArgument '-Xms2G'
+            jvmArgument '-Xmx6G'
+            jvmArgument '-XX:+UseG1GC'
+            jvmArgument '-XX:+ParallelRefProcEnabled'
+
+            // 动态 CDS（JDK 21）：第一次启动把加载过的类写进 run/client.jsa，
+            // 之后每次启动直接复用，省掉一部分类加载时间。删掉 client.jsa 即可重来。
+            jvmArgument '-XX:SharedArchiveFile=client.jsa'
+            jvmArgument '-XX:+AutoCreateSharedArchive'
+
+            // 只调资源 / 数据包、不在乎游戏内帧率时取消注释：跳过 C2 编译，启动更快。
+            // jvmArgument '-XX:TieredStopAtLevel=1'
         }
 
         server {
@@ -135,42 +150,45 @@ dependencies {
     // Local jars in libs/ (Flux Networks, MI, MoreFluxStorage, etc.)
     // The UFO Future jar is compile-time stubbed (access-widened) so the patch
     // layer can mix into its private members; the real jar is used at runtime only.
-    implementation fileTree(dir: 'libs', include: ['*.jar'], exclude: ['ufo-2.1-fix7.jar', 'ufo-3.0.0-beta.3.jar', 'ufo-3.0.0-beta.4.jar', 'raishxcore-0.1.0-beta.2.jar', 'ufo-stubs.jar'])
-    compileOnly files('libs/ufo-3.0.0-beta.4.jar')
-    compileOnly files('libs/raishxcore-0.1.0-beta.2.jar')
-    localRuntime files('libs/ufo-3.0.0-beta.4.jar')
-    localRuntime files('libs/raishxcore-0.1.0-beta.2.jar')
+    // libs/ jars are compile-time only now: every mod they provided lives in run/mods
+    // (synced from the Chaos_world pack), so pulling them in at runtime would register
+    // the same modIds twice and make FML skip a random one.
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'], exclude: ['ufo-2.1-fix7.jar', 'ufo-3.0.0-beta.3.jar', 'ufo-3.0.0-beta.4.jar', 'ufo-3.0.0-beta.6.jar', 'ufo-3.0.2.jar', 'raishxcore-0.1.0-beta.2.jar', 'raishxcore-0.2.jar', 'ufo-stubs.jar'])
+    compileOnly files('libs/ufo-3.0.2.jar')
+    compileOnly files('run/mods/raishxcore-0.2.2.jar')
     compileOnly files('run/mods/ProjectE-1.21.1-PE1.1.0.jar')
     compileOnly files('run/mods/projectexpansion-1.21.1-1.0.6.jar')
-    compileOnly files('run/mods/appliedenergistics2-19.2.17.jar')
-    compileOnly files('run/mods/AE2-Lightning-Tech-CE-2.1.0-beta.5.jar')
-    compileOnly files('run/mods/ExtendedAE-1.21-2.2.36-neoforge.jar')
+    compileOnly files('run/mods/appliedenergistics2-19.2.18.jar')
+    compileOnly files('run/mods/ae2lt-2.1.2-beta4.jar')
+    compileOnly files('run/mods/ExtendedAE-1.21-2.2.42-neoforge.jar')
     compileOnly files('run/mods/Glodium-1.21-2.2-neoforge.jar')
     compileOnly files('run/mods/FluxNetworks-1.21.1-8.0.0.jar')
     compileOnly files('run/mods/more_flux_storage-1.21.1-1.0.3.jar')
-    compileOnly files('run/mods/guideme-21.1.17.jar')
-    compileOnly files('run/mods/ldlib2-neoforge-1.21.1-2.2.40-all.jar')
-    compileOnly files('run/mods/neoecoae-21.2.0-beta1.jar')
+    compileOnly files('run/mods/guideme-21.1.20.jar')
+    compileOnly files('run/mods/ldlib2-neoforge-1.21.1-2.2.44-all.jar')
+    compileOnly files('run/mods/neoecoae-21.2.10.jar')
     compileOnly files('run/mods/ae2omnicells-1.21.1-neoforge-1.1.6.jar')
 compileOnly "org.appliedenergistics.yoga:yoga:1.0.0"
 compileOnly "dev.vfyjxf:taffy:1.1.4"
     compileOnly files('run/mods/kubejs-neoforge-2101.7.2-build.377.jar')
     compileOnly files('run/mods/rhino-2101.2.8-build.91.jar')
 compileOnly files('run/mods/ae2addonlib-1.0.3-1.21.1.jar')
-    compileOnly files('run/mods/geckolib-neoforge-1.21.1-4.9.2.jar')
+    compileOnly files('run/mods/geckolib-neoforge-1.21.1-4.9.3.jar')
     compileOnly files('run/mods/Mekanism-1.21.1-10.7.19.85.jar')
     compileOnly files('run/mods/mekanism_extras-1.21.1-1.4.1.jar')
-    compileOnly files('run/mods/JEIunofficial-1.21.1-neoforge-19.53.0.426.jar')
-    compileOnly files('run/mods/AppliedFlux-1.21-2.1.5-neoforge.jar')
+    compileOnly files('run/mods/jei-1.21.1-neoforge-19.69.0.457.jar')
+    compileOnly files('run/mods/AppliedFlux-1.21-2.1.7-neoforge.jar')
     compileOnly files('run/mods/Jade-1.21.1-NeoForge-15.10.6.jar')
-    compileOnly files('run/mods/extendedae_plus-1.6.2.jar')
+    compileOnly files('run/mods/extendedae_plus-1.6.3.jar')
     compileOnly files('run/mods/twilightforest-1.21.1-4.8.3345-universal.jar')
     compileOnly files('run/mods/Re-Avaritia-neoforge-1.21.1-1.4.2-release.jar')
     // FTB Quests integration (optional at runtime, guarded by ModList check)
-    compileOnly files('run/mods/ftb-quests-neoforge-2101.1.36.jar')
-    compileOnly files('run/mods/ftb-library-neoforge-2101.1.36.jar')
-    compileOnly files('run/mods/ftb-teams-neoforge-2101.1.9.jar')
-    compileOnly files('run/mods/architectury-neoforge-13.0.8.jar')
+    compileOnly files('run/mods/ftb-quests-neoforge-2101.1.37.jar')
+    compileOnly files('run/mods/ftb-library-neoforge-2101.1.37.jar')
+    compileOnly files('run/mods/ftb-teams-neoforge-2101.1.11.jar')
+    compileOnly files('run/mods/architectury-13.0.11-neoforge.jar')
+    // Botania mana integration (optional at runtime, guarded by ModList check).
+    compileOnly files('libs/botania-neoforge-1.21.1-457.jar')
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

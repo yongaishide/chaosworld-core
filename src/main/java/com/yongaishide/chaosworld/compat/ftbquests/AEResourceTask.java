@@ -38,6 +38,10 @@ public class AEResourceTask extends Task {
     private static final String COMPONENTS_TAG = "components";
     private static final String AMOUNT_TAG = "amount";
     private static final ResourceLocation FLUX_TYPE_ID = ResourceLocation.fromNamespaceAndPath("appflux", "flux");
+    private static final ResourceLocation LUMEN_TYPE_ID = ResourceLocation.fromNamespaceAndPath("appliedas", "lumen");
+    private static final ResourceLocation AIR_TYPE_ID = ResourceLocation.fromNamespaceAndPath("appliedpneumatics", "air_type");
+    private static final String LUMEN_UNIT_FALLBACK = "Lm";
+    private static final String AIR_UNIT_FALLBACK = "L";
 
     private ResourceLocation keyTypeId;
     private ResourceLocation resourceId;
@@ -63,8 +67,13 @@ public class AEResourceTask extends Task {
     }
 
     public void setResource(ResourceLocation keyTypeId, ResourceLocation resourceId) {
+        setResource(keyTypeId, resourceId, null);
+    }
+
+    public void setResource(ResourceLocation keyTypeId, ResourceLocation resourceId, DataComponentPatch components) {
         this.keyTypeId = keyTypeId;
         this.resourceId = resourceId;
+        this.components = components;
     }
 
     public void setAmount(long amount) {
@@ -94,7 +103,40 @@ public class AEResourceTask extends Task {
         if (isFluxResource()) {
             return StringUtils.formatDouble(value, true) + " FE";
         }
-        return isVolumeResource() ? ChemicalTask.getVolumeString(value) : StringUtils.formatDouble(value, true);
+        if (isVolumeResource()) {
+            return ChemicalTask.getVolumeString(value);
+        }
+        String unit = customUnit();
+        return unit == null
+                ? StringUtils.formatDouble(value, true)
+                : StringUtils.formatDouble(value, true) + " " + unit;
+    }
+
+    /**
+     * 流明、空气这类自带单位符号的自定义资源（发光量 Lm / 气量 L）。
+     *
+     * <p>符号从 key 类型上现取（{@code LumenKeyType.getUnitSymbol()} / {@code AirKeyType.getUnitSymbol()}），
+     * 解析不到时退回模组里的默认符号，保证任务列表照样带单位。</p>
+     */
+    private String customUnit() {
+        if (LUMEN_TYPE_ID.equals(keyTypeId)) {
+            return unitSymbolOr(LUMEN_UNIT_FALLBACK);
+        }
+        if (AIR_TYPE_ID.equals(keyTypeId)) {
+            return unitSymbolOr(AIR_UNIT_FALLBACK);
+        }
+        return null;
+    }
+
+    private String unitSymbolOr(String fallback) {
+        AEKey key = KnownAEKeys.resolve(ref());
+        if (key != null) {
+            String symbol = key.getType().getUnitSymbol();
+            if (symbol != null && !symbol.isEmpty()) {
+                return symbol;
+            }
+        }
+        return fallback;
     }
 
     private boolean isVolumeResource() {
@@ -184,9 +226,13 @@ public class AEResourceTask extends Task {
         if (isFluxResource()) {
             return Component.literal(formatValue(amount));
         }
-        return isVolumeResource()
-                ? Component.literal(ChemicalTask.getVolumeString(amount) + " of ").append(resourceName())
-                : Component.literal(amount + "x ").append(resourceName());
+        if (isVolumeResource()) {
+            return Component.literal(ChemicalTask.getVolumeString(amount) + " of ").append(resourceName());
+        }
+        if (customUnit() != null) {
+            return Component.literal(formatValue(amount) + " of ").append(resourceName());
+        }
+        return Component.literal(amount + "x ").append(resourceName());
     }
 
     @Override

@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "item": "chaosworld_core:white_dwarf_cell_housing"
+      "item": "ufo:white_dwarf_item_cell_housing"
     },
     "D": {
       "item": "ufo:white_dwarf_matter"

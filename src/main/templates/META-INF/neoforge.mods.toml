@@ -103,14 +103,14 @@ config="${mod_id}.mixins.json"
     type="required"
     ordering="AFTER"
     side="BOTH"
-    versionRange="[3.0.0-beta.4,)"
+    versionRange="[3.0.0-beta.6,)"
 
 [[dependencies.${mod_id}]]
     modId="raishxcore"
     type="required"
     ordering="AFTER"
     side="BOTH"
-    versionRange="[0.1.0-beta.2,)"
+    versionRange="[0.2,)"
 
 [[dependencies.${mod_id}]]
     modId="jade"
@@ -145,7 +145,7 @@ config="${mod_id}.mixins.json"
     type="required"
     ordering="AFTER"
     side="BOTH"
-    versionRange="[21.2.0-beta1,)"
+    versionRange="[21.2.10,)"
 
 [[dependencies.${mod_id}]]
     modId="ae2omnicells"
@@ -179,6 +179,14 @@ config="${mod_id}.mixins.json"
     ordering="AFTER"
     side="BOTH"
     versionRange="[2101.1.0,)"
+
+# Botania mana integration is optional: without Botania the pool/key-type are simply not registered.
+[[dependencies.${mod_id}]]
+    modId="botania"
+    type="optional"
+    ordering="AFTER"
+    side="BOTH"
+    versionRange="[454,)"
 
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't

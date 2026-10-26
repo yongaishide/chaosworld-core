@@ -140,6 +140,11 @@ public class ChaosWorld {
             com.yongaishide.chaosworld.compat.ftbquests.FTBQuestsIntegration.init();
         }
 
+        // Botania 魔力集成（可选：未安装 Botania 时不注册任何东西）
+        if (net.neoforged.fml.ModList.get().isLoaded("botania")) {
+            com.yongaishide.chaosworld.botania.ChaosBotania.init(modEventBus);
+        }
+
         ModCreativeModeTabs.register(modEventBus);
         ModCellItems.register(modEventBus);
         ModRecipes.register(modEventBus);
@@ -168,6 +173,16 @@ public class ChaosWorld {
         LOGGER.info("HELLO FROM COMMON SETUP");
         event.enqueueWork(UFORegistryHandler.INSTANCE::onInit);
         event.enqueueWork(com.yongaishide.chaosworld.compat.MixinConflictFix::apply);
+        // NeoEcoAE 电力档案（可选：未安装或版本过旧时跳过，不影响启动）
+        if (net.neoforged.fml.ModList.get().isLoaded("neoecoae")) {
+            event.enqueueWork(() -> {
+                try {
+                    com.yongaishide.chaosworld.compat.neoecoae.CreativeCellIdlePowerProfile.register();
+                } catch (Throwable t) {
+                    LOGGER.warn("[chaosworld] NeoEcoAE 电力档案不可用，驱动器待机耗电保持原样", t);
+                }
+            });
+        }
         if (net.neoforged.fml.ModList.get().isLoaded("ftbquests")) {
             event.enqueueWork(com.yongaishide.chaosworld.compat.ftbquests.FTBQuestsIntegration::setup);
         }

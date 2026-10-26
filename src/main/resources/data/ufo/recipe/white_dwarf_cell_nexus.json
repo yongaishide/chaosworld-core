@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "chaosworld_core:white_dwarf_cell_housing"
+      "item": "ufo:white_dwarf_item_cell_housing"
     },
     {
       "item": "chaosworld_core:white_dwarf_storage_component_16g"
@@ -11,6 +11,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "ufo:white_dwarf_cell_nexus"
+    "id": "chaosworld_core:white_dwarf_cell_nexus"
   }
 }

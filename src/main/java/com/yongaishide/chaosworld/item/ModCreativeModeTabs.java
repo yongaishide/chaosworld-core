@@ -19,6 +19,9 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ChaosWorld.STARLIGHT_GEMSTONE.get()))
                     .title(Component.translatable("creativetab.chaosworld.chaos_world"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        if (net.neoforged.fml.ModList.get().isLoaded("botania")) {
+                            output.accept(com.yongaishide.chaosworld.botania.ChaosBotania.FLUIX_MANA_POOL_ITEM.get());
+                        }
                         // --- MEKANISM 机器 ---
                         output.accept(com.yongaishide.chaosworld.mekanism.MekanismMachines.MECHANICAL_ASSEMBLER.asItem());
                         var factoryBlocks = com.yongaishide.chaosworld.mekanism.AssemblingFactoryMachines.FACTORY_BLOCKS;
@@ -47,7 +50,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModCellItems.QUANTUM_OMNI_CELL_64P.get());
                         output.accept(ModCellItems.QUANTUM_OMNI_CELL_256P.get());
 
-                        // --- 存储组件 / 外壳 / 中子星与脉冲星元件 ---
+                        // --- 存储组件 / 外壳 / 白矮星、中子星与脉冲星元件 ---
                         output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.WHITE_DWARF_STORAGE_COMPONENT_1G.get());
                         output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.WHITE_DWARF_STORAGE_COMPONENT_4G.get());
                         output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.WHITE_DWARF_STORAGE_COMPONENT_16G.get());
@@ -63,9 +66,11 @@ public class ModCreativeModeTabs {
                         output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.PULSAR_STORAGE_COMPONENT_16P.get());
                         output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.PULSAR_STORAGE_COMPONENT_64P.get());
                         output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.PULSAR_STORAGE_COMPONENT_256P.get());
-                        output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.WHITE_DWARF_CELL_HOUSING.get());
-                        output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.NEUTRON_STAR_CELL_HOUSING.get());
-                        output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.PULSAR_CELL_HOUSING.get());
+                        output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.WHITE_DWARF_CELL_1G.get());
+                        output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.WHITE_DWARF_CELL_4G.get());
+                        output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.WHITE_DWARF_CELL_16G.get());
+                        output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.WHITE_DWARF_CELL_64G.get());
+                        output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.WHITE_DWARF_CELL_256G.get());
                         output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.NEUTRON_STAR_CELL_1T.get());
                         output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.NEUTRON_STAR_CELL_4T.get());
                         output.accept(com.yongaishide.chaosworld.patch.contents.LegacyTieredContent.NEUTRON_STAR_CELL_16T.get());
