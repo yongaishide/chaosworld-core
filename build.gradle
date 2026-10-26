@@ -28,6 +28,12 @@ sourceSets.main.resources {
 
 tasks.named('processResources', ProcessResources).configure {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    // 把许可证全文与第三方声明打进 jar，路径为 META-INF/。
+    // LGPLv3 §4(a) 要求随作品附上一份许可证副本；CurseForge 上玩家拿到的是 jar，不是仓库。
+    from('LICENSE-GPL-3.0.txt')    { into 'META-INF' }
+    from('LICENSE-LGPL-3.0.txt')   { into 'META-INF' }
+    from('LICENSE.md')             { into 'META-INF' }
+    from('THIRD_PARTY_NOTICES.md') { into 'META-INF' }
 }
 
 repositories {

@@ -1,3 +1,10 @@
+/*
+ * Contains code derived from Applied Botanics 1.6.0-alpha.3
+ *   https://github.com/ramidzkh/Applied-Botanics
+ * Copyright (C) ramidzkh and contributors, LGPL-3.0-or-later
+ * Modified for Chaos World Core by chaosworld on 2026-10-26.
+ * See THIRD_PARTY_NOTICES.md for details.
+ */
 package com.yongaishide.chaosworld.botania;
 
 import net.minecraft.core.BlockPos;
@@ -104,7 +111,7 @@ public final class ChaosBotania {
     private static void commonSetup(net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             // 键类型已在注册阶段登记，这里只做一次自检日志，方便排查集成是否生效
-            LOGGER.info("Applied Botanics-style mana integration enabled for chaosworld_core");
+            LOGGER.info("Botania mana integration enabled for chaosworld_core");
         });
     }
 
