@@ -48,7 +48,7 @@ displayName="${mod_name}" #mandatory
 description='''
 Chaos World Core (乱界核心) - a UFO Future addon for Minecraft 1.21.1 NeoForge. UFO Future provides the multiblocks, stellar matter and mega storage; this mod adds the metals/tech material line, Mekanism machines (Mechanical Assembler, Dragon Soul Forge, Vein Drill), cross-mod integrations and its own storage cells.
 
-Requires UFO Future 2.1+ (modid "ufo").
+Requires UFO Future 3.0+ (modid "ufo") and RaishX Core (modid "raishxcore").
 
 Mekanism machines: Mechanical Assembler and 8 factory tiers, Dragon Soul Forge and 8 factory tiers, Vein Drill with dimension ore pools and upgrades.
 
@@ -56,7 +56,7 @@ Materials: tinted metal/tech ingots, nuggets, plates, dusts, gears, rods and sto
 
 Quantum Omni storage matrices (16G-256P) built on the AE2 OmniCells universal storage backend, NeoEcoAE ECO Drive compatible.
 
-Integrations: AE2, ExtendedAE+, AE2 Lightning Tech, ProjectE/ProjectExpansion, Twilight Forest, Mekanism, KubeJS, JEI and Jade.
+Integrations: AE2, ExtendedAE+, AE2 Lightning Tech, Botania mana, FTB Quests, ProjectE/ProjectExpansion, Twilight Forest, Mekanism, KubeJS, MMCR, JEI and Jade.
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
